@@ -1,0 +1,35 @@
+.gallery-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #E5E3E0;
+  border-radius: 2px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: #C4A882;
+}
+
+.gallery-item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.gallery-item-inner {
+  transition: transform 0.6s ease;
+}
+
+.gallery-item:hover .gallery-item-inner {
+  transform: scale(1.02);
+}
