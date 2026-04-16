@@ -46,15 +46,12 @@ export default function Sobre() {
           <div className="w-full aspect-[9/16] bg-bg-secondary overflow-hidden">
             <img
               src="/images/sobre/capa.jpg"
-              alt="Retrato de Daline Ribeiro — foto de Sammi Landweer"
+              alt="Daline Ribeiro sorrindo com um fundo amarelo vibrante"
               loading="lazy"
               decoding="async"
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="mt-4 text-[11px] uppercase tracking-wider2 text-ink-muted">
-            Foto: Sammi Landweer
-          </p>
         </motion.aside>
       </div>
     </PageLayout>
