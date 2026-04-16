@@ -12,7 +12,7 @@ interface GalleryImage {
 const GALLERY = '/images/gallery';
 
 const IMAGES: GalleryImage[] = [
-  { id: '01', src: `${GALLERY}/01.jpg`, alt: 'Capa — foto de Matheus José Maria', ratio: 3 / 2 },
+  { id: '01', src: `${GALLERY}/01.jpg`, alt: 'Capa — Daline Ribeiro dançando com fundo amarelo', ratio: 1024 / 635 },
   { id: '02', src: `${GALLERY}/02.jpg`, alt: 'Capa — foto de Sammi Landweer', ratio: 3 / 2 },
   { id: '03', src: `${GALLERY}/03.jpg`, alt: 'Capa — foto de Sammi Landweer', ratio: 3 / 2 },
   { id: '04', src: `${GALLERY}/04.jpg`, alt: 'ENTRE — apresentação no Festival Panorama', ratio: 2400 / 1614 },
@@ -20,8 +20,6 @@ const IMAGES: GalleryImage[] = [
   { id: '06', src: `${GALLERY}/06.jpg`, alt: 'Foto de Matheus José Maria', ratio: 3 / 2 },
   { id: '07', src: `${GALLERY}/07.jpg`, alt: 'Inhotim — True Rouge, foto de Leca Novo', ratio: 1955 / 2400 },
   { id: '08', src: `${GALLERY}/08.jpg`, alt: 'Ópera da Serra da Capivara — foto de Joaquim Neto', ratio: 2400 / 2023 },
-  { id: '09', src: `${GALLERY}/09.jpg`, alt: 'Oficina Serestinha — foto de Victor Martins', ratio: 3 / 2 },
-  { id: '10', src: `${GALLERY}/10.jpg`, alt: 'Oficina Serestinha — foto de Victor Martins', ratio: 3 / 2 },
 ];
 
 export default function HorizontalGallery() {
