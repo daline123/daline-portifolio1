@@ -9,9 +9,9 @@ export default function Contato() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25, duration: 0.6 }}
-        className="font-display font-extrabold text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-14 md:mb-20 max-w-[16ch] uppercase tracking-tighter"
+        className="font-display font-medium text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-14 md:mb-20 max-w-[16ch] lowercase"
       >
-        Vamos criar <span className="font-normal text-ink-accent lowercase tracking-normal">juntas?</span>
+        vamos criar <span className="font-normal text-ink-accent tracking-normal lowercase">juntas?</span>
       </motion.h1>
 
       <div className="border-t border-line-subtle mb-14">

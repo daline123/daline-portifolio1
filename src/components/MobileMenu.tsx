@@ -39,9 +39,9 @@ export default function MobileMenu({ open, onClose, items }: MobileMenuProps) {
             <Link
               to="/"
               onClick={onClose}
-              className="font-display font-extrabold text-[22px] tracking-tight text-ink-primary uppercase"
+              className="font-display font-medium text-[22px] text-ink-primary lowercase"
             >
-              Daline Ribeiro
+              daline ribeiro
             </Link>
             <button
               type="button"

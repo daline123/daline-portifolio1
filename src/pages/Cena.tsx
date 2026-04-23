@@ -95,10 +95,10 @@ export default function Cena() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25, duration: 0.6 }}
-        className="font-display font-extrabold text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-16 md:mb-24 uppercase tracking-tighter"
+        className="font-display font-medium text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-16 md:mb-24 lowercase"
       >
-        Trabalhos em cena<br />
-        <span className="font-normal text-ink-accent tracking-normal capitalize text-2xl md:text-3xl">intérprete e criadora.</span>
+        trabalhos em cena<br />
+        <span className="font-normal text-ink-accent tracking-normal text-2xl md:text-3xl">intérprete e criadora.</span>
       </motion.h1>
 
       <Section label="Intérprete" works={INTERPRETE} onSelect={setSelectedWork} />
@@ -164,7 +164,7 @@ function WorkCard({ work, index, onClick }: { work: Work; index: number; onClick
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
       </div>
-      <h3 className="font-display font-bold text-xl md:text-2xl text-ink-primary leading-tight">
+      <h3 className="font-display font-medium text-xl md:text-2xl text-ink-primary leading-tight lowercase">
         {work.title}
       </h3>
       {work.period && (
@@ -207,7 +207,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
           <div className="space-y-8">
             <div>
               <p className="label mb-4">{work.period}</p>
-              <h2 className="font-display font-extrabold text-4xl md:text-5xl text-ink-primary leading-tight tracking-tight uppercase">
+              <h2 className="font-display font-medium text-4xl md:text-5xl text-ink-primary leading-tight lowercase">
                 {work.title}
               </h2>
             </div>
