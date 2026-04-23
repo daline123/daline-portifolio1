@@ -71,7 +71,7 @@ export default function HorizontalGallery() {
       >
         <div className="flex items-center h-full px-6 md:px-12 gap-3">
           {IMAGES.map((img, i) => (
-            <GalleryFrame key={img.id} image={img} priority={i === 0} />
+            <GalleryFrame key={img.id} image={img} priority={i === 0} isFirst={i === 0} />
           ))}
           <div className="flex-shrink-0 w-12 md:w-24" aria-hidden="true" />
         </div>
@@ -86,7 +86,7 @@ interface GalleryFrameProps {
   priority: boolean;
 }
 
-function GalleryFrame({ image, priority }: GalleryFrameProps) {
+function GalleryFrame({ image, priority, isFirst }: GalleryFrameProps & { isFirst?: boolean }) {
   return (
     <figure
       className="gallery-item m-0"
@@ -95,14 +95,24 @@ function GalleryFrame({ image, priority }: GalleryFrameProps) {
         aspectRatio: String(image.ratio),
       }}
     >
-      <div className="gallery-item-inner relative w-full h-full overflow-hidden bg-bg-secondary">
+      <div className="gallery-item-inner relative w-full h-full overflow-hidden bg-bg-secondary group">
         <img
           src={image.src}
           alt={image.alt}
           loading={priority ? 'eager' : 'lazy'}
           decoding="async"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
+        {isFirst && (
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex flex-col justify-end p-8 md:p-16">
+            <h1 className="text-white font-display italic text-6xl md:text-[min(12vw,120px)] leading-[0.85] tracking-tight mb-2 drop-shadow-2xl">
+              Daline Ribeiro
+            </h1>
+            <p className="text-white/90 font-display italic text-lg md:text-2xl tracking-wide opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+              dança. corpo. movimento.
+            </p>
+          </div>
+        )}
       </div>
     </figure>
   );

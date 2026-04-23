@@ -17,10 +17,10 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-bg-primary/80 backdrop-blur-md border-b border-line-subtle">
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
           <Link to="/" className="flex flex-col leading-none" aria-label="Daline Ribeiro — início">
-            <span className="font-display text-[22px] md:text-[26px] font-medium text-ink-primary">
+            <span className="font-display italic text-[24px] md:text-[28px] font-medium text-ink-primary">
               Daline Ribeiro
             </span>
-            <span className="hidden md:block text-[12px] italic tracking-wider2 text-ink-muted font-light mt-1">
+            <span className="hidden md:block font-display italic text-[14px] tracking-wide text-ink-muted mt-1">
               dança. corpo. movimento.
             </span>
           </Link>
