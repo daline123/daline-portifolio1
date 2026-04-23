@@ -9,9 +9,9 @@ export default function Contato() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.25, duration: 0.6 }}
-        className="font-display text-3xl md:text-[44px] leading-[1.15] text-ink-primary mb-14 md:mb-20 max-w-[16ch]"
+        className="font-display font-extrabold text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-14 md:mb-20 max-w-[16ch] uppercase tracking-tighter"
       >
-        Vamos criar <span className="italic text-ink-accent">juntas?</span>
+        Vamos criar <span className="font-normal text-ink-accent lowercase tracking-normal">juntas?</span>
       </motion.h1>
 
       <div className="border-t border-line-subtle mb-14">
@@ -41,7 +41,7 @@ export default function Contato() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.6 }}
-        className="font-display italic text-lg md:text-xl text-ink-muted leading-snug max-w-[52ch]"
+        className="font-display text-lg md:text-xl text-ink-muted leading-snug max-w-[52ch]"
       >
         Disponível para projetos, ativações, workshops e colaborações artísticas.
       </motion.p>

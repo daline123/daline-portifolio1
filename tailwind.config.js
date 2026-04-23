@@ -20,9 +20,8 @@ export default {
         },
       },
       fontFamily: {
-        display: ['Cormorant Garamond', 'serif'],
-        syne: ['Syne', 'sans-serif'],
-        sans: ['Jost', 'system-ui', 'sans-serif'],
+        display: ['Syne', 'sans-serif'],
+        sans: ['Syne', 'sans-serif'],
       },
       spacing: {
         nav: '72px',

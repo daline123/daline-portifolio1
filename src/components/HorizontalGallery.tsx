@@ -105,10 +105,10 @@ function GalleryFrame({ image, priority, isFirst }: GalleryFrameProps & { isFirs
         />
         {isFirst && (
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex flex-col justify-end p-8 md:p-16">
-            <h1 className="text-white font-syne font-extrabold text-5xl md:text-[min(8vw,80px)] uppercase leading-[0.8] tracking-tighter mb-4 drop-shadow-2xl">
+            <h1 className="text-white font-display font-extrabold text-5xl md:text-[min(8vw,80px)] uppercase leading-[0.8] tracking-tighter mb-4 drop-shadow-2xl">
               Daline Ribeiro
             </h1>
-            <p className="text-white/90 font-syne font-normal text-sm md:text-lg tracking-[0.3em] uppercase opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
+            <p className="text-white/90 font-display font-normal text-sm md:text-lg tracking-[0.3em] uppercase opacity-0 animate-fade-in-up" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
               dança. corpo. movimento.
             </p>
           </div>

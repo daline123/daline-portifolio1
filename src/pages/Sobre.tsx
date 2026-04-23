@@ -31,7 +31,7 @@ export default function Sobre() {
             transition={{ delay: 0.7, duration: 0.6 }}
             className="mt-12 pt-8 border-t border-line-subtle"
           >
-            <p className="font-display italic text-xl md:text-2xl text-ink-primary leading-snug">
+            <p className="font-display font-bold text-xl md:text-2xl text-ink-primary leading-snug">
               Disponível para projetos, ativações, workshops e colaborações artísticas.
             </p>
           </motion.div>

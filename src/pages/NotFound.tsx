@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
 
 export default function NotFound() {
   return (
     <PageLayout label="Erro 404">
-      <h1 className="font-display text-4xl md:text-6xl text-ink-primary leading-tight mb-6">
-        Página <span className="italic text-ink-accent">não encontrada.</span>
-      </h1>
+      <motion.h1
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.6 }}
+        className="font-display font-extrabold text-3xl md:text-5xl text-ink-primary mb-6 uppercase tracking-tighter"
+      >
+        Página <span className="font-normal text-ink-accent lowercase tracking-normal">não encontrada.</span>
+      </motion.h1>
       <p className="text-ink-body text-lg mb-10 max-w-[52ch]">
         Este endereço não existe — talvez o movimento tenha mudado de direção.
       </p>

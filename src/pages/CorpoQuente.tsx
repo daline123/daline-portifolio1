@@ -27,8 +27,8 @@ export default function CorpoQuente() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="font-display leading-[0.98] text-ink-primary mb-10 md:mb-14"
           >
-            <span className="block text-5xl md:text-7xl lg:text-[96px]">Corpo</span>
-            <span className="block text-5xl md:text-7xl lg:text-[96px] italic text-ink-accent">
+            <span className="block text-5xl md:text-7xl lg:text-[96px] font-extrabold uppercase tracking-tighter">Corpo</span>
+            <span className="block text-5xl md:text-7xl lg:text-[96px] font-normal text-ink-accent lowercase">
               Quente.
             </span>
           </motion.h1>
@@ -85,7 +85,7 @@ export default function CorpoQuente() {
               aria-hidden="true"
               className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"
             />
-            <p className="absolute bottom-5 left-5 right-5 font-display italic text-bg-primary text-xl md:text-2xl leading-snug">
+            <p className="absolute bottom-5 left-5 right-5 font-display font-extrabold text-bg-primary text-xl md:text-2xl leading-snug uppercase tracking-tight">
               Só corpo, presença e vontade de sentir.
             </p>
           </div>

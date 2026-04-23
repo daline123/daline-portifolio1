@@ -39,7 +39,7 @@ export default function MobileMenu({ open, onClose, items }: MobileMenuProps) {
             <Link
               to="/"
               onClick={onClose}
-              className="font-display italic text-[22px] font-medium text-ink-primary"
+              className="font-display font-extrabold text-[22px] tracking-tight text-ink-primary uppercase"
             >
               Daline Ribeiro
             </Link>
