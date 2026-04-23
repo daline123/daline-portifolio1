@@ -13,41 +13,41 @@ interface Work {
 
 const INTERPRETE: Work[] = [
   {
-    title: 'Lia Rodrigues Companhia de Danças',
+    title: 'lia rodrigues companhia de danças',
     period: 'desde 2022',
     description:
-      'Intérprete-criadora. Criou Borda (2025), dança Encantado e Fúria. Apresentações no Théâtre National de Chaillot (Paris), Sadler\'s Wells (Londres), Sydney Opera House, entre outros.',
+      'intérprete-criadora. criou borda (2025), dança encantado e fúria. apresentações no théâtre national de chaillot (paris), sadler\'s wells (londres), sydney opera house, entre outros.',
     cover: '/images/gallery/01.jpg',
     images: ['/images/gallery/01.jpg', '/images/gallery/02.jpg'],
   },
   {
-    title: 'True Rouge — Tunga / Inhotim',
+    title: 'true rouge — tunga / inhotim',
     period: '2023',
     description:
-      'Performer na instauração True Rouge do artista Tunga no Instituto Inhotim, evento Anoitecer Inhotim, com direção de Lia Rodrigues.',
+      'performer na instauração true rouge do artista tunga no instituto inhotim, evento anoitecer inhotim, com direção de lia rodrigues.',
     cover: '/images/gallery/07.jpg',
     images: ['/images/gallery/07.jpg', '/images/gallery/06.jpg'],
   },
   {
-    title: 'ENTRE — Datan Izaká',
+    title: 'entre — datan izaká',
     period: '2016',
     description:
-      'Intérprete-criadora. Apresentações no SESC Santo Amaro (SP) e no Festival Panorama (RJ).',
+      'intérprete-criadora. apresentações no sesc santo amaro (sp) e no festival panorama (rj).',
     cover: '/images/gallery/04.jpg',
     images: ['/images/gallery/04.jpg', '/images/gallery/03.jpg'],
   },
   {
-    title: 'Ato Ancestral — Ópera na Serra da Capivara',
+    title: 'ato ancestral — ópera na serra da capivara',
     period: '2017',
     description:
-      'Intérprete. Direção e criação de Datan Izaká, colaboração de Samuel Alvis. São Raimundo Nonato.',
+      'intérprete. direção e criação de datan izaká, colaboração de samuel alvis. são raimundo nonato.',
     cover: '/images/gallery/08.jpg',
     images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
   },
   {
-    title: 'Catirinas — Weyla Carvalho',
+    title: 'catirinas — weyla carvalho',
     period: '2017',
-    description: 'Performer. Apresentação na 3ª edição do Junta Festival.',
+    description: 'performer. apresentação na 3ª edição do junta festival.',
     cover: '/images/gallery/05.jpg',
     images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
   },
@@ -55,32 +55,37 @@ const INTERPRETE: Work[] = [
 
 const CRIADORA: Work[] = [
   {
-    title: 'Oficina Serestinha',
+    title: 'oficina serestinha',
     description:
-      'Combina dança contemporânea, composição e consciência corporal com sonoridades das serestas do Piauí. Explora como o repertório de movimento da infância se expande na dança atual.',
-    cover: '/images/gallery/02.jpg',
-    images: ['/images/gallery/02.jpg', '/images/gallery/01.jpg'],
+      'combina dança contemporânea, composição e consciência corporal com sonoridades das serestas do piauí. explora como o repertório de movimento da infância se expande na dança atual.',
+    cover: '/images/serestinha/02.jpg',
+    images: [
+      '/images/serestinha/01.jpg',
+      '/images/serestinha/02.jpg',
+      '/images/serestinha/03.jpg',
+      '/images/serestinha/04.jpg',
+    ],
   },
   {
-    title: 'Direção de Movimento — As Cotas (UNE)',
+    title: 'direção de movimento — as cotas (une)',
     description:
-      'Videoclipe manifesto celebrando 10 anos das Cotas no Brasil. Com Chico César, Leci Brandão, Mart\'nália, Teresa Cristina, José Miguel Wisnik, Iara Rennó e outros.',
+      'videoclipe manifesto celebrando 10 anos das cotas no brasil. com chico césar, leci brandão, mart\'nália, teresa cristina, josé miguel wisnik, iara rennó e outros.',
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
     cover: '/images/gallery/03.jpg',
     images: ['/images/gallery/03.jpg', '/images/gallery/04.jpg'],
   },
   {
-    title: 'PRETAFORMA',
+    title: 'pretaforma',
     period: '2021',
     description:
-      'Plataforma para artistas pretos e pretas, em parceria com Jacob Alves. Festival online com 46 artistas do Brasil e Moçambique. Contemplado pelo Prêmio Maria da Inglaterra / Lei Aldir Blanc Estadual Piauí.',
+      'plataforma para artistas pretos e pretas, em parceria com jacob alves. festival online com 46 artistas do brasil e moçambique. contemplado pelo prêmio maria da inglaterra / lei aldir blanc estadual piauí.',
     cover: '/images/gallery/06.jpg',
     images: ['/images/gallery/06.jpg', '/images/gallery/05.jpg'],
   },
   {
-    title: 'Mostra de Artes Cênicas — 11ª Bienal da UNE',
+    title: 'mostra de artes cênicas — 11ª bienal da une',
     description:
-      'Coordenação da mostra com curadoria de Maria Marighella e Adriana Bittencourt. 8 mil estudantes participantes.',
+      'coordenação da mostra com curadoria de maria marighella e adriana bittencourt. 8 mil estudantes participantes.',
     cover: '/images/gallery/09.jpg',
     images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
   },
