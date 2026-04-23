@@ -18,8 +18,8 @@ body,
 
 body {
   margin: 0;
-  background: #0A0A0A;
-  color: #D1D1D1;
+  background: #F5EFE1;
+  color: #333333;
   font-family: 'Syne', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -45,7 +45,7 @@ h4 {
   margin: 0;
   font-family: 'Syne', sans-serif;
   font-weight: 500;
-  color: #F9F6F1;
+  color: #1A1A1A;
 }
 
 @layer components {

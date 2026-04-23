@@ -5,18 +5,18 @@ export default {
     extend: {
       colors: {
         bg: {
-          primary: '#0A0A0A',
-          secondary: '#141414',
+          primary: '#F5EFE1',
+          secondary: '#EAE2CF',
         },
         ink: {
-          primary: '#F9F6F1',
-          body: '#D1D1D1',
-          muted: '#808080',
+          primary: '#1A1A1A',
+          body: '#333333',
+          muted: '#7E7E7E',
           accent: '#9B4A24',
         },
         line: {
-          subtle: '#262626',
-          active: '#F9F6F1',
+          subtle: '#DFD7C2',
+          active: '#1A1A1A',
         },
       },
       fontFamily: {
