@@ -5,17 +5,17 @@ export default {
     extend: {
       colors: {
         bg: {
-          primary: '#FAFAFA',
-          secondary: '#F0EFED',
+          primary: '#F9F6F1',
+          secondary: '#F2EFE9',
         },
         ink: {
           primary: '#1A1A1A',
           body: '#3D3D3D',
           muted: '#8A8A8A',
-          accent: '#C4A882',
+          accent: '#9B4A24',
         },
         line: {
-          subtle: '#E5E3E0',
+          subtle: '#EBE5D9',
           active: '#1A1A1A',
         },
       },

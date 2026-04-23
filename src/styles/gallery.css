@@ -13,12 +13,12 @@
 }
 
 .gallery-scroll::-webkit-scrollbar-thumb {
-  background: #E5E3E0;
+  background: #EBE5D9;
   border-radius: 2px;
 }
 
 .gallery-scroll::-webkit-scrollbar-thumb:hover {
-  background: #C4A882;
+  background: #9B4A24;
 }
 
 .gallery-item {
