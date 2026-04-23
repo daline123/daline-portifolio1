@@ -132,15 +132,18 @@ function Section({ label, works, onSelect }: SectionProps) {
       >
         {label}
       </motion.p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex overflow-x-auto pb-12 gap-8 snap-x snap-mandatory no-scrollbar -mx-6 px-6 md:-mx-12 md:px-12">
         {works.map((w, i) => (
-          <WorkCard
-            key={w.title}
-            work={w}
-            index={i}
-            onClick={() => onSelect(w)}
-          />
+          <div key={w.title} className="flex-shrink-0 w-[240px] md:w-[320px] snap-start">
+            <WorkCard
+              work={w}
+              index={i}
+              onClick={() => onSelect(w)}
+            />
+          </div>
         ))}
+        {/* Placeholder to ensure we can scroll to the end with padding */}
+        <div className="flex-shrink-0 w-1 md:w-1" aria-hidden="true" />
       </div>
     </section>
   );
