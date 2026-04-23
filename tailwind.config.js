@@ -21,6 +21,7 @@ export default {
       },
       fontFamily: {
         display: ['Cormorant Garamond', 'serif'],
+        syne: ['Syne', 'sans-serif'],
         sans: ['Jost', 'system-ui', 'sans-serif'],
       },
       spacing: {
