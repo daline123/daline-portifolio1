@@ -10,7 +10,24 @@ const PARAGRAPHS = [
 export default function Sobre() {
   return (
     <PageLayout label="Sobre" wide>
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-12 md:gap-16 lg:gap-24 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-[360px_1fr] gap-12 md:gap-16 lg:gap-24 items-start">
+        <motion.aside
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.7 }}
+          className="md:sticky md:top-[calc(var(--nav-height)+80px)]"
+        >
+          <div className="w-full aspect-[9/16] bg-bg-secondary overflow-hidden">
+            <img
+              src="/images/sobre/capa.jpg"
+              alt="Daline Ribeiro sorrindo com um fundo amarelo vibrante"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </motion.aside>
+
         <div>
           <div className="space-y-6 text-ink-body text-[16px] md:text-[17px] leading-[1.75]">
             {PARAGRAPHS.map((p, i) => (
@@ -36,23 +53,6 @@ export default function Sobre() {
             </p>
           </motion.div>
         </div>
-
-        <motion.aside
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.7 }}
-          className="md:sticky md:top-[calc(var(--nav-height)+80px)]"
-        >
-          <div className="w-full aspect-[9/16] bg-bg-secondary overflow-hidden">
-            <img
-              src="/images/sobre/capa.jpg"
-              alt="Daline Ribeiro sorrindo com um fundo amarelo vibrante"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </motion.aside>
       </div>
     </PageLayout>
   );
