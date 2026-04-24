@@ -17,8 +17,8 @@ const INTERPRETE: Work[] = [
     period: 'desde 2022',
     description:
       'intérprete-criadora. criou borda (2025), dança encantado e fúria. apresentações no théâtre national de chaillot (paris), sadler\'s wells (londres), sydney opera house, entre outros.',
-    cover: '/images/lia/borda-capa.jpg',
-    images: ['/images/lia/borda-capa.jpg', '/images/gallery/01.jpg', '/images/gallery/02.jpg'],
+    cover: '/images/gallery/borda-capa.jpg',
+    images: ['/images/gallery/borda-capa.jpg', '/images/gallery/01.jpg', '/images/gallery/02.jpg'],
   },
   {
     title: 'true rouge — tunga / inhotim',
@@ -58,7 +58,7 @@ const CRIADORA: Work[] = [
     title: 'oficina serestinha',
     description:
       'combina dança contemporânea, composição e consciência corporal com sonoridades das serestas do piauí. explora como o repertório de movimento da infância se expande na dança atual.',
-    cover: '/images/serestinha/02.jpg',
+    cover: '/images/gallery/serestinha-capa.jpg',
     images: [
       '/images/serestinha/01.jpg',
       '/images/serestinha/02.jpg',
