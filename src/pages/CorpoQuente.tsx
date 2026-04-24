@@ -75,7 +75,7 @@ export default function CorpoQuente() {
         >
           <div className="relative w-full aspect-[4/3] overflow-hidden bg-bg-secondary">
             <img
-              src="/images/corpo-quente/capa.jpg"
+              src="/images/gallery/01.jpg"
               alt="Prática Corpo Quente — Daline Ribeiro"
               loading="lazy"
               decoding="async"

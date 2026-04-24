@@ -18,7 +18,7 @@ const INTERPRETE: Work[] = [
     description:
       'intérprete-criadora. criou borda (2025), dança encantado e fúria. apresentações no théâtre national de chaillot (paris), sadler\'s wells (londres), sydney opera house, entre outros.',
     cover: '/images/gallery/borda-capa.jpg',
-    images: ['/images/gallery/borda-capa.jpg', '/images/gallery/01.jpg', '/images/gallery/02.jpg'],
+    images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
   },
   {
     title: 'true rouge — tunga / inhotim',
@@ -60,10 +60,8 @@ const CRIADORA: Work[] = [
       'combina dança contemporânea, composição e consciência corporal com sonoridades das serestas do piauí. explora como o repertório de movimento da infância se expande na dança atual.',
     cover: '/images/gallery/serestinha-capa.jpg',
     images: [
-      '/images/serestinha/01.jpg',
-      '/images/serestinha/02.jpg',
-      '/images/serestinha/03.jpg',
-      '/images/serestinha/04.jpg',
+      '/images/gallery/09.jpg',
+      '/images/gallery/10.jpg',
     ],
   },
   {
@@ -71,7 +69,7 @@ const CRIADORA: Work[] = [
     description:
       'videoclipe manifesto celebrando 10 anos das cotas no brasil. com chico césar, leci brandão, mart\'nália, teresa cristina, josé miguel wisnik, iara rennó e outros.',
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
-    cover: '/images/gallery/03.jpg',
+    cover: '/images/gallery/as-cotas.jpg',
     images: ['/images/gallery/03.jpg', '/images/gallery/04.jpg'],
   },
   {
@@ -79,7 +77,7 @@ const CRIADORA: Work[] = [
     period: '2021',
     description:
       'plataforma para artistas pretos e pretas, em parceria com jacob alves. festival online com 46 artistas do brasil e moçambique. contemplado pelo prêmio maria da inglaterra / lei aldir blanc estadual piauí.',
-    cover: '/images/gallery/06.jpg',
+    cover: '/images/gallery/pretaforma.jpg',
     images: ['/images/gallery/06.jpg', '/images/gallery/05.jpg'],
   },
   {
