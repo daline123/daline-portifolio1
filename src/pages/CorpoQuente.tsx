@@ -90,6 +90,23 @@ export default function CorpoQuente() {
             </p>
           </div>
 
+          <div className="grid grid-cols-2 gap-4">
+            <div className="aspect-square overflow-hidden bg-bg-secondary">
+              <img
+                src="/images/gallery/corpo-quente-1.jpg"
+                alt="Corpo Quente Prática 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden bg-bg-secondary">
+              <img
+                src="/images/gallery/corpo-quente-2.png"
+                alt="Corpo Quente Prática 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           <div className="pt-2">
             <p className="label mb-4">Práticas</p>
             <ul className="space-y-2">
