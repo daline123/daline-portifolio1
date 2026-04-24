@@ -87,7 +87,7 @@ const CRIADORA: Work[] = [
     cover: '/images/gallery/09.jpg',
     images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
   },
-];
+const ALL_WORKS: Work[] = [...INTERPRETE, ...CRIADORA];
 
 export default function Cena() {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -104,9 +104,16 @@ export default function Cena() {
         <span className="font-normal text-ink-accent tracking-normal text-2xl md:text-3xl">intérprete e criadora.</span>
       </motion.h1>
 
-      <Section label="Intérprete" works={INTERPRETE} onSelect={setSelectedWork} />
-      <div className="h-20 md:h-28" aria-hidden="true" />
-      <Section label="Criadora" works={CRIADORA} onSelect={setSelectedWork} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+        {ALL_WORKS.map((w, i) => (
+          <WorkCard
+            key={w.title}
+            work={w}
+            index={i}
+            onClick={() => setSelectedWork(w)}
+          />
+        ))}
+      </div>
 
       <AnimatePresence>
         {selectedWork && (
@@ -114,41 +121,6 @@ export default function Cena() {
         )}
       </AnimatePresence>
     </PageLayout>
-  );
-}
-
-interface SectionProps {
-  label: string;
-  works: Work[];
-  onSelect: (work: Work) => void;
-}
-
-function Section({ label, works, onSelect }: SectionProps) {
-  return (
-    <section>
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.5 }}
-        className="label mb-8"
-      >
-        {label}
-      </motion.p>
-      <div className="flex overflow-x-auto pb-12 gap-8 snap-x snap-mandatory no-scrollbar -mx-6 px-6 md:-mx-12 md:px-12">
-        {works.map((w, i) => (
-          <div key={w.title} className="flex-shrink-0 w-[240px] md:w-[320px] snap-start">
-            <WorkCard
-              work={w}
-              index={i}
-              onClick={() => onSelect(w)}
-            />
-          </div>
-        ))}
-        {/* Placeholder to ensure we can scroll to the end with padding */}
-        <div className="flex-shrink-0 w-1 md:w-1" aria-hidden="true" />
-      </div>
-    </section>
   );
 }
 
