@@ -17,8 +17,8 @@ const INTERPRETE: Work[] = [
     period: 'desde 2022',
     description:
       'intérprete-criadora. criou borda (2025), dança encantado e fúria. apresentações no théâtre national de chaillot (paris), sadler\'s wells (londres), sydney opera house, entre outros.',
-    cover: '/images/gallery/01.jpg',
-    images: ['/images/gallery/01.jpg', '/images/gallery/02.jpg'],
+    cover: '/images/lia/borda-capa.jpg',
+    images: ['/images/lia/borda-capa.jpg', '/images/gallery/01.jpg', '/images/gallery/02.jpg'],
   },
   {
     title: 'true rouge — tunga / inhotim',
