@@ -2,6 +2,11 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
 
+interface TechnicalCredit {
+  label: string;
+  content: string;
+}
+
 interface Work {
   title: string;
   period?: string;
@@ -9,6 +14,7 @@ interface Work {
   href?: string;
   cover: string;
   images: string[];
+  credits?: string | TechnicalCredit[];
 }
 
 const INTERPRETE: Work[] = [
@@ -19,6 +25,59 @@ const INTERPRETE: Work[] = [
       `Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo "Borda" em 2025 e dança também as peça "Encantado" e "Fúria". Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler's Wells em Londres e Sydney Opera House entre outros.`,
     cover: '/images/gallery/borda-capa.jpg',
     images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
+    credits: [
+      {
+        label: 'Borda - Ficha Técnica',
+        content: `Criação: Lia Rodrigues
+Dançado e criado em colaboração com: Leonardo Nunes, Valentina Fittipaldi, Andrey da Silva, David Abreu, Raquel Alexandre, Daline Ribeiro, João Alves, Cayo Almeida, Vitor de Abreu
+Assistente de criação: Amália Lima
+Dramaturgia: Silvia Soter
+Colaboração artística e imagens: Sammi Landweer
+Design de iluminação: Nicolas Boudier
+Assistentes de iluminação: Magali Foubert, Baptistine Méral e Jimmy Wong
+Trilha sonora: Miguel Bevilacqua (a partir de gravações da Missão de Pesquisa Folclórica de 1938 e trecho da música “Amor Amor Amor” de domínio público, interpretada por Luiz Paixão)
+Mixagem e masterização: Ronaldo Gonçalves
+Produção/difusão: Colette de Turville
+Assistente de produção: Astrid Toledo
+Produção e difusão Brasil: Gabi Gonçalves / Corpo Rastreado
+Secretária/administrativa: Gloria Laureano
+Apoio logístico Centro de Artes da Maré: Sendy Silva
+Professores: Amália Lima, Leonardo Nunes, Valentina Fittipaldi, Andrey Silva
+Figurinos: Lia Rodrigues Companhia de Danças
+Estagiária: Cecília Carvalhosa
+Costureira: Antônia Jardilino de Paiva
+Agradecimentos: Thérèse Barbanel, Corpo Rastreado, Inês Assumpção, Luiz Assumpção, Diana Nassif, equipe do Centro de Artes da Maré, Jacques Segueilla
+Dedicado a: Max Nassif Earp
+Produção: Lia Rodrigues Companhia de Danças
+Coprodução: Kunstenfestivaldesarts – Bruxelles / Maison de la danse – Pôle européen de criação, com apoio à Biennale de Lyon / Chaillot – Théâtre National de la Danse – Paris / Le CENTQUATRE – Paris / Festival d’Automne à Paris / Wiener Festwochen – Wien / La Bâtie – Festival de Genève – Comédie de Genève / Romaeuropa – Roma / PACT Zollverein – Essen / One Dance Festival – Plovdiv / Theater Freiburg / Muffatwerk – Münich / Passages Transfestival – Metz / Festival Perspectives – Saarbrücken / Le Parvis scène nationale Tarbes–Pyrénées / Tanz im August / HAU Hebbel am Ufer – Berlin / Théâtre Garonne – scène européenne – Toulouse / Le Lieu Unique – Scène nationale de Nantes (em residência na La Libre Usine)
+Com o apoio de: Fondation Ammodo, Redes da Maré e Centro de Artes da Maré
+Lia Rodrigues é Artista associada do teatro CENTQUATRE-PARIS / França e da Maison de la danse / Polo europeu de criação em parceria com a Biennale de la danse de Lyon / França`
+      },
+      {
+        label: 'Encantado - Ficha Técnica',
+        content: `Criação e direção: Lia Rodrigues
+Dançado e criado em colaboração por: Leonardo Nunes, Valentina Fittipaldi, Andrey da Silva, Larissa Lima, Ricardo Xavier, David Abreu, Tiago Oliveira, Raquel Alexandre. Também dançado por Felipe Vian, Alice Alves, Daline Ribeiro
+Colaboração na criação: Carolina Repetto, Joana Castro, Matheus Macena
+Assistente de criação e direção: Amália Lima
+Dramaturgia: Silvia Soter
+Colaboração artística e imagens: Sammi Landweer
+Criação de luz: Nicolas Boudier, com assistência técnica de Baptistine Méral e Magali Foubert
+Trilha sonora/mixagem: Alexandre Seabra (a partir de trechos de músicas do povo Guarani Mbya/Aldeia de Kalipety da T.I. Tenondé Porã, cantadas e tocadas durante a marcha de povos indígenas em Brasília, em agosto e setembro de 2021, contra o “marco temporal”, uma medida inconstitucional que prejudica o presente e o futuro de todas as gerações dos povos indígenas.
+Produção Brasil: Gabi Gonçalves/Corpo Rastreado
+Iluminação (criação e operação) no Brasil: Jimmy Wong
+Produção e difusão internacional: Colette de Turville, com assistência de Astrid Toledo
+Administração França: Jacques Segueilla
+Idealização e produção do projeto de apoio do Instituto Goethe: Claudia Oliveira
+Secretária e administração: Glória Laureano
+Professores: Amalia Lima, Sylvia Barretto, Valentina Fittipaldi
+Uma coprodução de Scène nationale Carré-Colonnes; Le TAP – Théâtre Auditorium de Poitiers; Scène nationale du Sud-Aquitain; La Coursive – Scène nationale de La Rochelle; L’empreinte, Scène nationale Brive-Tulle; Théâtre d’Angoulême Scène Nationale; Le Moulin du Roc, Scène nationale à Niort; La Scène Nationale d’Aubusson; Kunstenfestivaldesarts (Brussels); Brussels, Theaterfestival (Basel); HAU Hebbel am Ufer (Berlin); Festival Oriente Occidente (Rovereto); Theater Freiburg; l’OARA – Office Artistique de la Région Nouvelle Aquitaine; Julidans (Amsterdam); Teatro Municipal do Porto; Festival DDD, dias de dança; Chaillot – Théâtre national de la Danse (Paris); Le CENTQUATRE-PARIS; e Festival d’Automne à Paris.
+Com apoio de FONDOC (Occitanie)/França; Fundo Internacional de Ajuda para as Organizações de Cultura e Educação 2021 do Ministério das Relações Exteriores da República Federal da Alemanha, do Goethe-Institut e de outros parceiros; Fondation d’entreprise Hermès/França, com a parceria de France Culture.
+Uma produção da Lia Rodrigues Companhia de Danças com apoio da Redes da Maré, da Campanha “A Maré diz não ao Coronavírus – projeto Conexão Saúde” e do Centro de Artes da Maré.
+Lia Rodrigues é artista associada ao Chaillot-Théâtre national de la Danse e ao CENTQUATRE, França.
+Agradecimentos: Thérèse Barbanel, Antoine Manologlou, Maguy Marin, Eliana Souza Silva, equipe do Centro de Artes da Maré.
+Encantado é dedicado ao Oliver.`
+      }
+    ]
   },
   {
     title: 'True Rouge',
@@ -35,6 +94,13 @@ const INTERPRETE: Work[] = [
       `Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká. Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.`,
     cover: '/images/gallery/04.jpg',
     images: ['/images/gallery/04.jpg', '/images/gallery/03.jpg'],
+    credits: `Concepção e criação: Datan Izaká
+Performers: Helen Mesquita, Daline Ribeiro e Ireno Gomes
+Colaboração: Janaína Lobo, Jacob Alves, César Costa, Glenda Fontinele, Paulo Beltrão, Viviane Lopes, Layane Holanda e Eduardo Araújo
+Fotografia: Victor Gabriel
+Design de Luz: Pablo Gomes
+Design de Som: Sérgio Donato
+Identidade visual: Sérgio Donato`
   },
   {
     title: 'Opera Serra da Capivara',
@@ -50,6 +116,10 @@ const INTERPRETE: Work[] = [
     description: `Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.`,
     cover: '/images/gallery/05.jpg',
     images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
+    credits: `Concepção, Direção, Produção: Weyla Carvalho
+Intérpretes: Bailarinos do projeto redemoinho/ Escola Estadual de Dança Lenir Argento: Cipó Alvarenga, Marcelinho Lopes, Décio Costa, Marcos Abner, Aline Guimarães, Daline Ribeiro, Mariana Nívea, Tulipa Braga, Laisla Santos, Iara Teixeira, Caroline Rodrigues, Sammya Tamires e Larissa Almeida junto com convidados: Hélio Alvarenga, Armando Cavalcante e Iriane Oliveira
+Música: Sérgio Matos
+Fotos: Maurício Pokemon`
   },
 ];
 
@@ -71,14 +141,70 @@ const CRIADORA: Work[] = [
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
     cover: '/images/gallery/as-cotas.jpg',
     images: ['/images/gallery/03.jpg', '/images/gallery/04.jpg'],
+    credits: `Realização: União Nacional dos Estudantes
+Direção: Fábio Bardella e Guilherme Martins
+Produção: RealqualqueR
+Roteiro: Fábio Bardella, Guilherme Martins e Camila Ribeiro
+Assistente de Direção: Victor Xavier
+Produção Executiva: Fábio Bardella
+Direção de Movimento: Daline Ribeiro
+Direção de Fotografia: Luiz Egídio
+1º Assistente de Fotografia: Bruno Ramos (Ricows)
+Operação Steady: Rubens Arantes
+2º Assistente de Fotografia: Teruo Sakamoto
+Fotografia DV: João Rúbio
+Video assist: Isabell Tell
+Montagem: Ana Carolina Vedovato e Fabio Bardella
+Direção de Arte: Lueli Marks e Helena Dib
+Assistente de Arte: Sven Beller
+Coordenação de Figurino: Helena Dib
+Figurinista: Jadson Maciel
+Make e Cabelo: Jéssica Dias Gaffer: Kleber Bam Bam
+Assistente de Produção: Jacob Alves
+Assistente Elétrica: Ricardinho e Jonas
+Luz e Maquinária: Fire Locação
+Pós-Produção: Clandestino
+Colorista: Alexandre Cristófaro e João Paulo Geraldo
+Coordenador de Pós-Produção: Gabriel Alvim
+Edição Online: Luiza Freire
+Atendimento: Elciane Magda
+Financeiro: Silvia Dotta
+Administrativo: Gabrielle Dotta
+Mídias Sociais: Carla Ribeiro
+Supervisão Geral: Alexandre Cristófaro
+Apoio: Monstercam
+
+TRILHA SONORA Letra: Carlos Rennó
+Música: Chico César
+Intérpretes: Célia Xakriabá, Chico César, Djuena Tikuna, Edvan Fulni-ô, Fabiana Cozza, Flor Gil, Gilsons (Francisco Gil, João Gil, José Gil), Iara Rennó, José Miguel Wisnik, Leci Brandão, Leticia Sabatella, Martnália, Mc Soffia, Moreno Veloso, Monkeyjhayam, Owera, Teresa Cristina, Vitão
+Produção Musical: Cris Scabello e Maurício Caetano
+Direção Musical: Cris Scabello e Maurício Caetano
+Produção Artística: Carlos Rennó
+Técnicos de Som: Cris Scabello e Mauricio Caetano - Estúdio Traquitana (SP) Elton Bozza - Estúdio Palco (RJ)
+Músicos: Cris Scabello (programação e baixo), Mauricio Caetano (programação e baixo), Marcelo Dworecki (baixo), Maurício Fleury (teclados), Daniel Gralha (trompete), Cuca Ferreira (sax tenor e sax barítono)
+Mixagem: Cris Scabello e Maurício Caetano
+Masterização: Leonardo Nakabayashi (Estúdio Banzai)
+Backing Vocal: Jaque da Silva e Gabriel Vako
+Elenco Principal: Bruna Brelaz, Gabriel Vako, Jade Beatriz, Rozana Barroso, Samela Satére mawé, Tamires Sampaio, Tel Guajajara
+Movimentos: Céu Ancelmo, Cunanny Willians, Joel Carlos, Júlia Brandão, Letícia C. Brasil, Maia Caos, Odasilva, Victória Fonseca, Ysmael Ribeiro
+Grupo de Capoeira Dragão do Mar: Amanda Rovere, Bianca Mondeja, Fabiano Avelin, Lucas Chen, Marcos Kauê Ferreira de Queiroz, Thayna Malta
+Cortejo: União Nacional dos Estudantes, União Estadual dos Estudantes de São Paulo, União Paulistas dos Estudantes Secundaristas, União Brasileira de Mulheres, UNEAFRO
+Locação: Faculdade de Direito da USP - Largo do São Francisco
+Staff Faculdade de Direito da USP: Camilo de Lelis Funchal Junior, Eduardo Silva Marcio Cardoso Leal, Marisa Roza Soares Gonçalves, Valdemar Pereira de Santos Filho
+Staff UNE Produção Executiva: Camila Ribeiro
+Comunicação: Manuella Mirella, Bel Vale, Junior Lima
+Assessoria de imprensa: Sara Puerta, Brenda Amaral
+Administrativo: Marta Vicente, Joaci Agostinho
+Motorista: Renato Tito`
   },
   {
     title: 'pretaforma',
     period: '2021',
     description:
-      `Idealizadora do  PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`,
+      `Idealizadora do PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`,
     cover: '/images/gallery/pretaforma.jpg',
     images: ['/images/gallery/06.jpg', '/images/gallery/05.jpg'],
+    credits: `Idealizadora do PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`
   },
   {
     title: 'mostra de artes cênicas — 11ª bienal da une',
@@ -86,6 +212,7 @@ const CRIADORA: Work[] = [
       `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`,
     cover: '/images/gallery/09.jpg',
     images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
+    credits: `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`
   },
 ];
 
@@ -157,6 +284,18 @@ function WorkCard({ work, index, onClick }: { work: Work; index: number; onClick
 }
 
 function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
+  const [activeTab, setActiveTab] = useState<number | null>(null);
+
+  const renderCreditsContent = (content: string) => {
+    return (
+      <div className="bg-bg-secondary p-8 rounded-lg mt-4 animate-fade-in-up">
+        <pre className="whitespace-pre-wrap font-sans text-sm text-ink-body leading-relaxed">
+          {content}
+        </pre>
+      </div>
+    );
+  };
+
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 md:p-12">
       <motion.div
@@ -171,11 +310,11 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
         initial={{ opacity: 0, scale: 0.95, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-        className="relative bg-bg-primary w-full max-w-5xl max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl border border-line-subtle"
+        className="relative bg-bg-primary w-full max-w-5xl max-h-[90vh] overflow-y-auto overflow-x-hidden shadow-2xl border border-line-subtle rounded-lg"
       >
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 z-10 p-2 text-ink-primary hover:text-ink-accent transition-colors"
+          className="absolute top-6 right-6 z-20 p-2 text-ink-primary hover:text-ink-accent transition-colors bg-bg-primary/80 backdrop-blur rounded-full"
           aria-label="Fechar"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -206,15 +345,58 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
                 Ver projeto online <span>→</span>
               </a>
             )}
+
+            {/* Technical Credits Section */}
+            {work.credits && (
+              <div className="pt-12 border-t border-line-subtle">
+                <p className="label mb-6 text-ink-primary">Informações Técnicas</p>
+                
+                {Array.isArray(work.credits) ? (
+                  <div className="space-y-4">
+                    {work.credits.map((cred, idx) => (
+                      <div key={idx}>
+                        <button
+                          onClick={() => setActiveTab(activeTab === idx ? null : idx)}
+                          className="w-full text-left py-4 flex justify-between items-center group border-b border-line-subtle/50"
+                        >
+                          <span className="font-display text-lg text-ink-body group-hover:text-ink-primary transition-colors">
+                            {cred.label}
+                          </span>
+                          <span className={`text-xl transition-transform duration-300 ${activeTab === idx ? 'rotate-45' : ''}`}>
+                            +
+                          </span>
+                        </button>
+                        {activeTab === idx && renderCreditsContent(cred.content)}
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div>
+                    <button
+                      onClick={() => setActiveTab(activeTab === 0 ? null : 0)}
+                      className="w-full text-left py-4 flex justify-between items-center group border-b border-line-subtle/50"
+                    >
+                      <span className="font-display text-lg text-ink-body group-hover:text-ink-primary transition-colors">
+                        Ficha Técnica Completa
+                      </span>
+                      <span className={`text-xl transition-transform duration-300 ${activeTab === 0 ? 'rotate-45' : ''}`}>
+                        +
+                      </span>
+                    </button>
+                    {activeTab === 0 && renderCreditsContent(work.credits)}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div className="space-y-6">
             {work.images.map((img, i) => (
-              <div key={i} className="aspect-video md:aspect-[4/3] bg-bg-secondary">
+              <div key={i} className="aspect-video md:aspect-[4/3] bg-bg-secondary overflow-hidden rounded">
                 <img
                   src={img}
                   alt={`${work.title} - ${i + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 />
               </div>
             ))}
