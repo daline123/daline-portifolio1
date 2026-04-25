@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 
 const NAV_ITEMS = [
@@ -11,12 +11,10 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
-  const isHome = location.pathname === '/';
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-none shadow-none transition-all duration-500">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-none">
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
           <Link to="/" className="flex flex-col leading-none" aria-label="daline ribeiro — início">
             <span className="font-display font-medium text-[22px] md:text-[28px] lowercase text-ink-primary">
@@ -31,10 +29,7 @@ export default function Navbar() {
             {NAV_ITEMS.map((item) => (
               <NavLink key={item.to} to={item.to} end>
                 {({ isActive }) => (
-                  <span 
-                    className="nav-link" 
-                    data-active={isActive}
-                  >
+                  <span className="nav-link" data-active={isActive}>
                     {item.label}
                   </span>
                 )}
