@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 
 const NAV_ITEMS = [
@@ -11,16 +11,28 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-bg-primary/80 backdrop-blur-md border-b border-line-subtle">
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          isHome 
+            ? 'bg-transparent border-transparent' 
+            : 'bg-bg-primary/80 backdrop-blur-md border-b border-line-subtle'
+        }`}
+      >
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
           <Link to="/" className="flex flex-col leading-none" aria-label="daline ribeiro — início">
-            <span className="font-display font-medium text-[22px] md:text-[28px] text-ink-primary lowercase">
+            <span className={`font-display font-medium text-[22px] md:text-[28px] lowercase transition-colors ${
+              isHome ? 'text-white' : 'text-ink-primary'
+            }`}>
               daline ribeiro
             </span>
-            <span className="hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] text-ink-muted mt-1 lowercase">
+            <span className={`hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] mt-1 lowercase transition-colors ${
+              isHome ? 'text-white/70' : 'text-ink-muted'
+            }`}>
               dança. corpo. movimento.
             </span>
           </Link>
@@ -29,7 +41,11 @@ export default function Navbar() {
             {NAV_ITEMS.map((item) => (
               <NavLink key={item.to} to={item.to} end>
                 {({ isActive }) => (
-                  <span className="nav-link" data-active={isActive}>
+                  <span 
+                    className={`nav-link ${isHome ? 'text-white/90 hover:text-white' : ''}`} 
+                    data-active={isActive && !isHome}
+                    style={isHome ? { '--nav-active-color': 'white' } as any : {}}
+                  >
                     {item.label}
                   </span>
                 )}
@@ -40,7 +56,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Instagram de Daline Ribeiro"
-              className="text-ink-primary hover:text-ink-accent transition-colors"
+              className={`transition-colors ${isHome ? 'text-white/90 hover:text-white' : 'text-ink-primary hover:text-ink-accent'}`}
             >
               <InstagramIcon />
             </a>
@@ -52,9 +68,9 @@ export default function Navbar() {
             aria-label="Abrir menu"
             className="md:hidden flex flex-col gap-[5px] p-2 -mr-2"
           >
-            <span className="w-6 h-px bg-ink-primary" />
-            <span className="w-6 h-px bg-ink-primary" />
-            <span className="w-6 h-px bg-ink-primary" />
+            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-white' : 'bg-ink-primary'}`} />
+            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-white' : 'bg-ink-primary'}`} />
+            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-white' : 'bg-ink-primary'}`} />
           </button>
         </div>
       </header>

@@ -10,15 +10,18 @@ export default function Home() {
       className="relative min-h-screen w-full overflow-hidden bg-bg-primary flex flex-col items-center"
     >
       {/* Hero Section */}
-      <div className="flex-1 w-full max-w-7xl pt-[calc(var(--nav-height)+20px)] pb-12 px-6 md:px-12 flex items-center">
-        <div className="relative w-full h-full max-h-[88vh] overflow-hidden group shadow-sm bg-bg-secondary">
+      <div className="flex-1 w-full max-w-7xl pt-0 pb-12 px-6 md:px-12 flex items-center">
+        <div className="relative w-full h-full max-h-[90vh] overflow-hidden group shadow-sm bg-bg-secondary">
           <img
             src="/images/gallery/home-capa.jpg"
             alt="Daline Ribeiro — Dança e Movimento"
             className="w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-[1.03]"
           />
           
-          {/* Subtle Overlay with Text */}
+          {/* Top Gradient for Navbar readability */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />
+          
+          {/* Subtle Bottom Overlay with Text */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex flex-col justify-end p-8 md:p-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
