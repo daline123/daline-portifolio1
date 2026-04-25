@@ -17,9 +17,9 @@ interface Work {
   credits?: string | TechnicalCredit[];
 }
 
-const INTERPRETE: Work[] = [
+const ALL_WORKS_DATA: Work[] = [
   {
-    title: 'lia rodrigues companhia de danças',
+    title: 'Lia Rodrigues Companhia De Danças',
     period: 'desde 2022',
     description:
       `Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo "Borda" em 2025 e dança também as peça "Encantado" e "Fúria". Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler's Wells em Londres e Sydney Opera House entre outros.`,
@@ -88,7 +88,7 @@ Encantado é dedicado ao Oliver.`
     images: ['/images/gallery/07.jpg', '/images/gallery/06.jpg'],
   },
   {
-    title: 'E|N|T|R|E',
+    title: 'Entre',
     period: '2016',
     description:
       `Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká. Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.`,
@@ -103,39 +103,7 @@ Design de Som: Sérgio Donato
 Identidade visual: Sérgio Donato`
   },
   {
-    title: 'Opera Serra da Capivara',
-    period: '2017',
-    description:
-      `Intérprete no espetáculo "Ato Ancestral" da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.`,
-    cover: '/images/gallery/08.jpg',
-    images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
-  },
-  {
-    title: 'Catirinas',
-    period: '2017',
-    description: `Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.`,
-    cover: '/images/gallery/05.jpg',
-    images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
-    credits: `Concepção, Direção, Produção: Weyla Carvalho
-Intérpretes: Bailarinos do projeto redemoinho/ Escola Estadual de Dança Lenir Argento: Cipó Alvarenga, Marcelinho Lopes, Décio Costa, Marcos Abner, Aline Guimarães, Daline Ribeiro, Mariana Nívea, Tulipa Braga, Laisla Santos, Iara Teixeira, Caroline Rodrigues, Sammya Tamires e Larissa Almeida junto com convidados: Hélio Alvarenga, Armando Cavalcante e Iriane Oliveira
-Música: Sérgio Matos
-Fotos: Maurício Pokemon`
-  },
-];
-
-const CRIADORA: Work[] = [
-  {
-    title: 'oficina serestinha',
-    description:
-      `Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.`,
-    cover: '/images/gallery/serestinha-capa.jpg',
-    images: [
-      '/images/gallery/09.jpg',
-      '/images/gallery/10.jpg',
-    ],
-  },
-  {
-    title: 'direção de movimento — as cotas (une)',
+    title: 'As Cotas',
     description:
       `Diretora de movimento do videoclipe "As Cotas" da União Nacional dos Estudantes, um manifesto audiovisual que celebra os dez anos de implementação das Cotas no Brasil, que contou com grandes nomes da música brasileira como intérpretes como: Chico César, Leci Brandão, Mart'nália, Teresa Cristina, José Miguel Wisnik, Iara Rennó entre outros.`,
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
@@ -198,7 +166,28 @@ Administrativo: Marta Vicente, Joaci Agostinho
 Motorista: Renato Tito`
   },
   {
-    title: 'pretaforma',
+    title: 'Serestinha',
+    description:
+      `Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.`,
+    cover: '/images/gallery/serestinha-capa.jpg',
+    images: [
+      '/images/gallery/09.jpg',
+      '/images/gallery/10.jpg',
+    ],
+  },
+  {
+    title: 'Catirinas',
+    period: '2017',
+    description: `Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.`,
+    cover: '/images/gallery/05.jpg',
+    images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
+    credits: `Concepção, Direção, Produção: Weyla Carvalho
+Intérpretes: Bailarinos do projeto redemoinho/ Escola Estadual de Dança Lenir Argento: Cipó Alvarenga, Marcelinho Lopes, Décio Costa, Marcos Abner, Aline Guimarães, Daline Ribeiro, Mariana Nívea, Tulipa Braga, Laisla Santos, Iara Teixeira, Caroline Rodrigues, Sammya Tamires e Larissa Almeida junto com convidados: Hélio Alvarenga, Armando Cavalcante e Iriane Oliveira
+Música: Sérgio Matos
+Fotos: Maurício Pokemon`
+  },
+  {
+    title: 'Pretaforma',
     period: '2021',
     description:
       `Idealizadora do PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`,
@@ -207,7 +196,7 @@ Motorista: Renato Tito`
     credits: `Idealizadora do PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`
   },
   {
-    title: 'mostra de artes cênicas — 11ª bienal da une',
+    title: 'Mostra De Artes Cênicas',
     description:
       `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`,
     cover: '/images/gallery/09.jpg',
@@ -215,8 +204,6 @@ Motorista: Renato Tito`
     credits: `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`
   },
 ];
-
-const ALL_WORKS: Work[] = [...INTERPRETE, ...CRIADORA];
 
 export default function Cena() {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -229,12 +216,12 @@ export default function Cena() {
         transition={{ delay: 0.25, duration: 0.6 }}
         className="font-display font-medium text-3xl md:text-[44px] leading-[1.1] text-ink-primary mb-16 md:mb-24 lowercase"
       >
-        trabalhos em cena<br />
-        <span className="font-normal text-ink-accent tracking-normal text-2xl md:text-3xl">intérprete e criadora.</span>
+        Trabalhos Em Cena<br />
+        <span className="font-normal text-ink-accent tracking-normal text-2xl md:text-3xl">Intérprete E Criadora.</span>
       </motion.h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-        {ALL_WORKS.map((w, i) => (
+        {ALL_WORKS_DATA.map((w, i) => (
           <WorkCard
             key={w.title}
             work={w}
@@ -271,7 +258,7 @@ function WorkCard({ work, index, onClick }: { work: Work; index: number; onClick
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
       </div>
-      <h3 className="font-display font-medium text-xl md:text-2xl text-ink-primary leading-tight lowercase">
+      <h3 className="font-display font-medium text-xl md:text-2xl text-ink-primary leading-tight">
         {work.title}
       </h3>
       {work.period && (
@@ -326,7 +313,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
           <div className="space-y-8">
             <div>
               <p className="label mb-4">{work.period}</p>
-              <h2 className="font-display font-medium text-4xl md:text-5xl text-ink-primary leading-tight lowercase">
+              <h2 className="font-display font-medium text-4xl md:text-5xl text-ink-primary leading-tight">
                 {work.title}
               </h2>
             </div>
@@ -349,7 +336,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
             {/* Technical Credits Section */}
             {work.credits && (
               <div className="pt-12 border-t border-line-subtle">
-                <p className="label mb-6 text-ink-primary">Informações Técnicas</p>
+                <p className="label mb-6 text-ink-primary font-bold">Ficha Técnica</p>
                 
                 {Array.isArray(work.credits) ? (
                   <div className="space-y-4">
@@ -377,7 +364,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
                       className="w-full text-left py-4 flex justify-between items-center group border-b border-line-subtle/50"
                     >
                       <span className="font-display text-lg text-ink-body group-hover:text-ink-primary transition-colors">
-                        Ficha Técnica Completa
+                         Ver Ficha Técnica Completa
                       </span>
                       <span className={`text-xl transition-transform duration-300 ${activeTab === 0 ? 'rotate-45' : ''}`}>
                         +
@@ -396,7 +383,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
                 <img
                   src={img}
                   alt={`${work.title} - ${i + 1}`}
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover transition-all duration-700"
                 />
               </div>
             ))}

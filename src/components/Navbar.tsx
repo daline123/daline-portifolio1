@@ -48,19 +48,13 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className={`hidden md:flex items-center gap-8 transition-colors duration-500 ${
-            isHome && !scrolled ? 'text-white' : 'text-ink-primary'
-          }`}>
+          <nav className="hidden md:flex items-center gap-8 text-ink-primary">
             {NAV_ITEMS.map((item) => (
               <NavLink key={item.to} to={item.to} end>
                 {({ isActive }) => (
                   <span 
                     className="nav-link" 
                     data-active={isActive}
-                    style={{ 
-                      color: isHome && !scrolled ? 'white' : 'inherit',
-                      '--nav-active-color': isHome && !scrolled ? 'white' : 'var(--ink-primary)'
-                    } as any}
                   >
                     {item.label}
                   </span>
@@ -72,7 +66,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Instagram de Daline Ribeiro"
-              className="hover:text-ink-accent transition-colors"
+              className="text-ink-primary hover:text-ink-accent transition-colors"
             >
               <InstagramIcon />
             </a>
@@ -84,9 +78,9 @@ export default function Navbar() {
             aria-label="Abrir menu"
             className="md:hidden flex flex-col gap-[5px] p-2 -mr-2"
           >
-            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
-            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
-            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
+            <span className="w-6 h-px bg-ink-primary" />
+            <span className="w-6 h-px bg-ink-primary" />
+            <span className="w-6 h-px bg-ink-primary" />
           </button>
         </div>
       </header>
