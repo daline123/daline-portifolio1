@@ -87,6 +87,8 @@ const CRIADORA: Work[] = [
     cover: '/images/gallery/09.jpg',
     images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
   },
+];
+
 const ALL_WORKS: Work[] = [...INTERPRETE, ...CRIADORA];
 
 export default function Cena() {
