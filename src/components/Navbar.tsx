@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-transparent transition-all duration-500">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-none shadow-none transition-all duration-500">
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
           <Link to="/" className="flex flex-col leading-none" aria-label="daline ribeiro — início">
             <span className="font-display font-medium text-[22px] md:text-[28px] lowercase text-ink-primary">
