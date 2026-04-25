@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 
 const NAV_ITEMS = [
@@ -11,12 +11,35 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHome = location.pathname === '/';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-none">
+      <header 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled 
+            ? 'bg-bg-primary/90 backdrop-blur-md border-b border-line-subtle' 
+            : 'bg-transparent border-none'
+        }`}
+      >
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
-          <Link to="/" className="flex flex-col leading-none" aria-label="daline ribeiro — início">
+          <Link 
+            to="/" 
+            className={`flex flex-col leading-none transition-all duration-500 ${
+              isHome && !scrolled ? 'opacity-0 pointer-events-none -translate-x-4' : 'opacity-100'
+            }`} 
+            aria-label="daline ribeiro — início"
+          >
             <span className="font-display font-medium text-[22px] md:text-[28px] lowercase text-ink-primary">
               daline ribeiro
             </span>
@@ -25,11 +48,20 @@ export default function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className={`hidden md:flex items-center gap-8 transition-colors duration-500 ${
+            isHome && !scrolled ? 'text-white' : 'text-ink-primary'
+          }`}>
             {NAV_ITEMS.map((item) => (
               <NavLink key={item.to} to={item.to} end>
                 {({ isActive }) => (
-                  <span className="nav-link" data-active={isActive}>
+                  <span 
+                    className="nav-link" 
+                    data-active={isActive}
+                    style={{ 
+                      color: isHome && !scrolled ? 'white' : 'inherit',
+                      '--nav-active-color': isHome && !scrolled ? 'white' : 'var(--ink-primary)'
+                    } as any}
+                  >
                     {item.label}
                   </span>
                 )}
@@ -40,7 +72,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Instagram de Daline Ribeiro"
-              className="text-ink-primary hover:text-ink-accent transition-colors"
+              className="hover:text-ink-accent transition-colors"
             >
               <InstagramIcon />
             </a>
@@ -52,9 +84,9 @@ export default function Navbar() {
             aria-label="Abrir menu"
             className="md:hidden flex flex-col gap-[5px] p-2 -mr-2"
           >
-            <span className="w-6 h-px bg-ink-primary" />
-            <span className="w-6 h-px bg-ink-primary" />
-            <span className="w-6 h-px bg-ink-primary" />
+            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
+            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
+            <span className={`w-6 h-px transition-colors duration-500 ${isHome && !scrolled ? 'bg-white' : 'bg-ink-primary'}`} />
           </button>
         </div>
       </header>

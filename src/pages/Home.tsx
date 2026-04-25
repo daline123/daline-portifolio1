@@ -24,10 +24,10 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-[#4A2B1F] font-display font-medium text-6xl md:text-[min(10vw,110px)] lowercase leading-[0.8] mb-6">
+            <h1 className="text-white font-display font-medium text-6xl md:text-[min(10vw,110px)] lowercase leading-[0.8] mb-6">
               daline ribeiro
             </h1>
-            <p className="text-[#4A2B1F]/80 font-display font-normal text-sm md:text-xl tracking-[0.15em] lowercase">
+            <p className="text-white/80 font-display font-normal text-sm md:text-xl tracking-[0.15em] lowercase">
               intérprete e criadora.
             </p>
           </motion.div>
