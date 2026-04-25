@@ -16,7 +16,8 @@ const INTERPRETE: Work[] = [
     title: 'lia rodrigues companhia de danças',
     period: 'desde 2022',
     description:
-      'intérprete-criadora. criou borda (2025), dança encantado e fúria. apresentações no théâtre national de chaillot (paris), sadler\'s wells (londres), sydney opera house, entre outros.',
+      'Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo “Borda” em 2025 e dança também as peça “ Encantado” e “Fúria”. Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler’s Wells em Londres e Sydney Opera House entre outros.
+',
     cover: '/images/gallery/borda-capa.jpg',
     images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
   },
@@ -24,7 +25,7 @@ const INTERPRETE: Work[] = [
     title: 'true rouge — tunga / inhotim',
     period: '2023',
     description:
-      'performer na instauração true rouge do artista tunga no instituto inhotim, evento anoitecer inhotim, com direção de lia rodrigues.',
+      'Performer na instauração True Rouge (1997) do artista Tunga no Instituto Inhotim com direção da Lia Rodrigues em Cia de Danças,  no evento “Anoitecer Inhotim” (2023). “True Rouge” foi a primeira obra a integrar Inhotim, e periodicamente é ativada por bailarinos.',
     cover: '/images/gallery/07.jpg',
     images: ['/images/gallery/07.jpg', '/images/gallery/06.jpg'],
   },
@@ -32,7 +33,7 @@ const INTERPRETE: Work[] = [
     title: 'entre — datan izaká',
     period: '2016',
     description:
-      'intérprete-criadora. apresentações no sesc santo amaro (sp) e no festival panorama (rj).',
+      'Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká.Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.',
     cover: '/images/gallery/04.jpg',
     images: ['/images/gallery/04.jpg', '/images/gallery/03.jpg'],
   },
@@ -40,14 +41,15 @@ const INTERPRETE: Work[] = [
     title: 'ato ancestral — ópera na serra da capivara',
     period: '2017',
     description:
-      'intérprete. direção e criação de datan izaká, colaboração de samuel alvis. são raimundo nonato.',
+      'Intérprete no espetáculo “ Ato Ancestral” da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.
+',
     cover: '/images/gallery/08.jpg',
     images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
   },
   {
     title: 'catirinas — weyla carvalho',
     period: '2017',
-    description: 'performer. apresentação na 3ª edição do junta festival.',
+    description: 'Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.',
     cover: '/images/gallery/05.jpg',
     images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
   },
@@ -57,7 +59,7 @@ const CRIADORA: Work[] = [
   {
     title: 'oficina serestinha',
     description:
-      'combina dança contemporânea, composição e consciência corporal com sonoridades das serestas do piauí. explora como o repertório de movimento da infância se expande na dança atual.',
+      'Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.',
     cover: '/images/gallery/serestinha-capa.jpg',
     images: [
       '/images/gallery/09.jpg',
@@ -67,7 +69,7 @@ const CRIADORA: Work[] = [
   {
     title: 'direção de movimento — as cotas (une)',
     description:
-      'videoclipe manifesto celebrando 10 anos das cotas no brasil. com chico césar, leci brandão, mart\'nália, teresa cristina, josé miguel wisnik, iara rennó e outros.',
+      'Diretora de movimento do videoclipe "As Cotas" da União Nacional dos Estudantes, um manifesto audiovisual que celebra os dez anos de implementação das Cotas no Brasil, que contou com grandes nomes da música brasileira como intérpretes como: Chico César, Leci Brandão, Mart'nália, Teresa Cristina, José Miguel Wisnik, Iara Rennó entre outros.',
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
     cover: '/images/gallery/as-cotas.jpg',
     images: ['/images/gallery/03.jpg', '/images/gallery/04.jpg'],
@@ -76,14 +78,14 @@ const CRIADORA: Work[] = [
     title: 'pretaforma',
     period: '2021',
     description:
-      'plataforma para artistas pretos e pretas, em parceria com jacob alves. festival online com 46 artistas do brasil e moçambique. contemplado pelo prêmio maria da inglaterra / lei aldir blanc estadual piauí.',
+      'Idealizadora do  PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí',
     cover: '/images/gallery/pretaforma.jpg',
     images: ['/images/gallery/06.jpg', '/images/gallery/05.jpg'],
   },
   {
     title: 'mostra de artes cênicas — 11ª bienal da une',
     description:
-      'coordenação da mostra com curadoria de maria marighella e adriana bittencourt. 8 mil estudantes participantes.',
+      'Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.',
     cover: '/images/gallery/09.jpg',
     images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
   },
