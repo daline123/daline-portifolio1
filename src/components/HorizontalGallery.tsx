@@ -12,7 +12,7 @@ interface GalleryImage {
 const GALLERY = '/images/gallery';
 
 const IMAGES: GalleryImage[] = [
-  { id: '01', src: `${GALLERY}/01.jpg`, alt: 'Capa — Daline Ribeiro dançando com fundo amarelo', ratio: 1024 / 635 },
+  { id: '01', src: `${GALLERY}/home-capa.jpg`, alt: 'Apresentação — Daline Ribeiro', ratio: 1536 / 1024 },
   { id: '02', src: `${GALLERY}/02.jpg`, alt: 'Capa — foto de Sammi Landweer', ratio: 3 / 2 },
   { id: '03', src: `${GALLERY}/03.jpg`, alt: 'Capa — foto de Sammi Landweer', ratio: 3 / 2 },
   { id: '04', src: `${GALLERY}/04.jpg`, alt: 'ENTRE — apresentação no Festival Panorama', ratio: 2400 / 1614 },
