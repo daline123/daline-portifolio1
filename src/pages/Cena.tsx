@@ -136,7 +136,7 @@ function WorkCard({ work, index, onClick }: { work: Work; index: number; onClick
       onClick={onClick}
       className="group text-left"
     >
-      <div className="aspect-[4/5] overflow-hidden bg-bg-secondary mb-4 relative">
+      <div className="aspect-square overflow-hidden bg-bg-secondary mb-4 relative">
         <img
           src={work.cover}
           alt={work.title}
