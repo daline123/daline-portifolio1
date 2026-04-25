@@ -7,11 +7,11 @@ export default function Home() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
-      className="relative min-h-screen w-full overflow-hidden bg-bg-primary flex flex-col"
+      className="relative min-h-screen w-full overflow-hidden bg-bg-primary flex flex-col items-center"
     >
       {/* Hero Section */}
-      <div className="flex-1 w-full pt-[calc(var(--nav-height)+20px)] pb-12 px-6 md:px-12 flex items-center justify-center">
-        <div className="relative w-full h-full max-h-[85vh] overflow-hidden group shadow-sm bg-bg-secondary">
+      <div className="flex-1 w-full max-w-7xl pt-[calc(var(--nav-height)+20px)] pb-12 px-6 md:px-12 flex items-center">
+        <div className="relative w-full h-full max-h-[88vh] overflow-hidden group shadow-sm bg-bg-secondary">
           <img
             src="/images/gallery/home-capa.jpg"
             alt="Daline Ribeiro — Dança e Movimento"

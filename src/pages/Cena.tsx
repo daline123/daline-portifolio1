@@ -95,7 +95,7 @@ export default function Cena() {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
 
   return (
-    <PageLayout label="Cena">
+    <PageLayout label="Cena" wide>
       <motion.h1
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

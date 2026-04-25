@@ -16,7 +16,7 @@ export default function PageLayout({ label, children, wide = false }: PageLayout
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className="min-h-screen pt-[calc(var(--nav-height)+80px)] md:pt-[calc(var(--nav-height)+120px)] pb-24 md:pb-32 px-6 md:px-12"
     >
-      <div className={`mx-auto ${wide ? 'max-w-5xl' : 'max-w-prose'}`}>
+      <div className={`mx-auto ${wide ? 'max-w-7xl' : 'max-w-prose'}`}>
         {label && (
           <motion.p
             initial={{ opacity: 0 }}
