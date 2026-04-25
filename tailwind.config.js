@@ -9,7 +9,7 @@ export default {
           secondary: '#EAE2CF',
         },
         ink: {
-          primary: '#1A1A1A',
+          primary: '#4A2B1F',
           body: '#333333',
           muted: '#7E7E7E',
           accent: '#9B4A24',

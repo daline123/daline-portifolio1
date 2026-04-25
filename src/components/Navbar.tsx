@@ -16,23 +16,13 @@ export default function Navbar() {
 
   return (
     <>
-      <header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isHome 
-            ? 'bg-transparent border-transparent' 
-            : 'bg-bg-primary/80 backdrop-blur-md border-b border-line-subtle'
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent border-transparent transition-all duration-500">
         <div className="flex items-center justify-between px-6 md:px-12 h-nav">
           <Link to="/" className="flex flex-col leading-none" aria-label="daline ribeiro — início">
-            <span className={`font-display font-medium text-[22px] md:text-[28px] lowercase transition-colors ${
-              isHome ? 'text-[#4A2B1F]' : 'text-ink-primary'
-            }`}>
+            <span className="font-display font-medium text-[22px] md:text-[28px] lowercase text-ink-primary">
               daline ribeiro
             </span>
-            <span className={`hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] mt-1 lowercase transition-colors ${
-              isHome ? 'text-[#4A2B1F]/70' : 'text-ink-muted'
-            }`}>
+            <span className="hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] mt-1 lowercase text-ink-muted">
               dança. corpo. movimento.
             </span>
           </Link>
@@ -42,9 +32,8 @@ export default function Navbar() {
               <NavLink key={item.to} to={item.to} end>
                 {({ isActive }) => (
                   <span 
-                    className={`nav-link ${isHome ? 'text-[#4A2B1F]/90 hover:text-[#4A2B1F]' : ''}`} 
-                    data-active={isActive && !isHome}
-                    style={isHome ? { '--nav-active-color': '#4A2B1F' } as any : {}}
+                    className="nav-link" 
+                    data-active={isActive}
                   >
                     {item.label}
                   </span>
@@ -56,7 +45,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Instagram de Daline Ribeiro"
-              className={`transition-colors ${isHome ? 'text-[#4A2B1F]/90 hover:text-[#4A2B1F]' : 'text-ink-primary hover:text-ink-accent'}`}
+              className="text-ink-primary hover:text-ink-accent transition-colors"
             >
               <InstagramIcon />
             </a>
@@ -68,9 +57,9 @@ export default function Navbar() {
             aria-label="Abrir menu"
             className="md:hidden flex flex-col gap-[5px] p-2 -mr-2"
           >
-            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-[#4A2B1F]' : 'bg-ink-primary'}`} />
-            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-[#4A2B1F]' : 'bg-ink-primary'}`} />
-            <span className={`w-6 h-px transition-colors ${isHome ? 'bg-[#4A2B1F]' : 'bg-ink-primary'}`} />
+            <span className="w-6 h-px bg-ink-primary" />
+            <span className="w-6 h-px bg-ink-primary" />
+            <span className="w-6 h-px bg-ink-primary" />
           </button>
         </div>
       </header>
