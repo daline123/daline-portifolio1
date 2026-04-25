@@ -76,7 +76,7 @@ const CRIADORA: Work[] = [
     title: 'pretaforma',
     period: '2021',
     description:
-      `Idealizadora do PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`,
+      `Idealizadora do  PRETAFORMA- Plataforma para artistas negros e negras, em parceria com o artista Jacob Alves. O festival aconteceu de forma on-line em 2021, 46 artistas do Brasil e Moçambique compuseram a programação da primeira edição. O projeto contemplado pelo Prêmio Maria da Inglaterra/Lei Adir Blanc Estadual Piauí`,
     cover: '/images/gallery/pretaforma.jpg',
     images: ['/images/gallery/06.jpg', '/images/gallery/05.jpg'],
   },
