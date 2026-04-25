@@ -16,8 +16,7 @@ const INTERPRETE: Work[] = [
     title: 'lia rodrigues companhia de danças',
     period: 'desde 2022',
     description:
-      'Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo “Borda” em 2025 e dança também as peça “ Encantado” e “Fúria”. Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler’s Wells em Londres e Sydney Opera House entre outros.
-',
+      `Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo “Borda” em 2025 e dança também as peça “ Encantado” e “Fúria”. Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler’s Wells em Londres e Sydney Opera House entre outros.`,
     cover: '/images/gallery/borda-capa.jpg',
     images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
   },
@@ -25,7 +24,7 @@ const INTERPRETE: Work[] = [
     title: 'true rouge — tunga / inhotim',
     period: '2023',
     description:
-      'Performer na instauração True Rouge (1997) do artista Tunga no Instituto Inhotim com direção da Lia Rodrigues em Cia de Danças,  no evento “Anoitecer Inhotim” (2023). “True Rouge” foi a primeira obra a integrar Inhotim, e periodicamente é ativada por bailarinos.',
+      `Performer na instauração True Rouge (1997) do artista Tunga no Instituto Inhotim com direção da Lia Rodrigues em Cia de Danças,  no evento “Anoitecer Inhotim” (2023). “True Rouge” foi a primeira obra a integrar Inhotim, e periodicamente é ativada por bailarinos.`,
     cover: '/images/gallery/07.jpg',
     images: ['/images/gallery/07.jpg', '/images/gallery/06.jpg'],
   },
@@ -33,7 +32,7 @@ const INTERPRETE: Work[] = [
     title: 'entre — datan izaká',
     period: '2016',
     description:
-      'Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká.Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.',
+      `Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká.Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.`,
     cover: '/images/gallery/04.jpg',
     images: ['/images/gallery/04.jpg', '/images/gallery/03.jpg'],
   },
@@ -41,15 +40,14 @@ const INTERPRETE: Work[] = [
     title: 'ato ancestral — ópera na serra da capivara',
     period: '2017',
     description:
-      'Intérprete no espetáculo “ Ato Ancestral” da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.
-',
+      `Intérprete no espetáculo “ Ato Ancestral” da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.`,
     cover: '/images/gallery/08.jpg',
     images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
   },
   {
     title: 'catirinas — weyla carvalho',
     period: '2017',
-    description: 'Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.',
+    description: `Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.`,
     cover: '/images/gallery/05.jpg',
     images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
   },
@@ -59,7 +57,7 @@ const CRIADORA: Work[] = [
   {
     title: 'oficina serestinha',
     description:
-      'Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.',
+      `Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.`,
     cover: '/images/gallery/serestinha-capa.jpg',
     images: [
       '/images/gallery/09.jpg',
