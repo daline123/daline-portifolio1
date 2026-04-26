@@ -28,7 +28,7 @@ export default function CorpoQuente() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="font-display leading-[0.98] text-ink-primary mb-10 md:mb-14"
           >
-            <span className="block text-5xl md:text-7xl lg:text-[100px] font-medium lowercase">corpo</span>
+            <span className="block text-5xl md:text-7xl lg:text-[100px] font-medium lowercase">corpo (Atualizado)</span>
             <span className="block text-5xl md:text-7xl lg:text-[100px] font-normal text-ink-accent lowercase">
               quente.
             </span>
