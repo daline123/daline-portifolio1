@@ -19,8 +19,9 @@ const PILLARS = [
 export default function CorpoQuente() {
   return (
     <PageLayout label="Corpo Quente" wide>
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_480px] gap-16 lg:gap-24 items-start max-w-7xl mx-auto">
-        <div>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_750px] gap-20 lg:gap-32 items-start max-w-[1600px] mx-auto">
+        {/* Left Side: Information */}
+        <div className="lg:sticky lg:top-[calc(var(--nav-height)+60px)]">
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,7 +34,7 @@ export default function CorpoQuente() {
             </span>
           </motion.h1>
 
-          <div className="space-y-6 text-ink-body text-lg md:text-[19px] leading-[1.7] max-w-[54ch]">
+          <div className="space-y-6 text-ink-body text-lg md:text-[20px] leading-[1.7] max-w-[50ch]">
             {PARAGRAPHS.map((p, i) => (
               <motion.p
                 key={i}
@@ -54,7 +55,7 @@ export default function CorpoQuente() {
           >
             <Link
               to="/contato"
-              className="group inline-flex items-center gap-3 border border-ink-primary text-ink-primary uppercase tracking-widest text-[11px] px-10 py-4 transition-all hover:bg-ink-primary hover:text-bg-primary"
+              className="group inline-flex items-center gap-3 border border-ink-primary text-ink-primary uppercase tracking-widest text-[11px] px-12 py-5 transition-all hover:bg-ink-primary hover:text-bg-primary"
             >
               Entre em contato
               <span
@@ -66,63 +67,51 @@ export default function CorpoQuente() {
             </Link>
           </motion.div>
 
-          <div className="mt-20 md:mt-32 pt-12 border-t border-line-subtle grid grid-cols-2 gap-8 max-w-[500px]">
-             <div>
-               <p className="label mb-4 text-ink-accent">Práticas</p>
-               <ul className="space-y-2">
-                 {PILLARS.slice(0,3).map(p => <li key={p} className="text-ink-body lowercase">{p}</li>)}
-               </ul>
-             </div>
-             <div>
-               <p className="label mb-4 opacity-0 hidden md:block">.</p>
-               <ul className="space-y-2">
-                 {PILLARS.slice(3).map(p => <li key={p} className="text-ink-body lowercase">{p}</li>)}
-               </ul>
+          <div className="mt-20 md:mt-32 pt-12 border-t border-line-subtle">
+             <p className="label mb-8 text-ink-accent uppercase tracking-widest font-bold">Os Pilares</p>
+             <div className="flex flex-wrap gap-x-12 gap-y-4">
+                {PILLARS.map(p => (
+                  <span key={p} className="text-xl font-display text-ink-body lowercase border-b border-ink-accent/20 pb-1">
+                    {p}
+                  </span>
+                ))}
              </div>
           </div>
         </div>
 
-        <motion.aside
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.45, duration: 0.8 }}
-          className="lg:sticky lg:top-[calc(var(--nav-height)+60px)] space-y-12"
-        >
-          <div className="relative w-full aspect-[4/5] overflow-hidden bg-bg-secondary rounded-sm">
-            <img
-              src="/images/gallery/01.jpg"
-              alt="Prática Corpo Quente — Daline Ribeiro"
-              className="w-full h-full object-cover grayscale transition-all duration-700 hover:grayscale-0"
-            />
-            <div
-              aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"
-            />
-            <p className="absolute bottom-6 left-6 right-6 font-display text-bg-primary text-2xl leading-tight lowercase">
-              só corpo, <br/>presença e vontade de sentir.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6">
-            <div className="aspect-square overflow-hidden bg-bg-secondary rounded-sm shadow-lg">
+        {/* Right Side: Stack of Natural Images */}
+        <div className="space-y-16 md:space-y-24">
+          {[
+            { src: '/images/gallery/01.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
+            { src: '/images/gallery/corpo-quente-1.jpg', alt: 'Mulheres em roda na prática' },
+            { src: '/images/gallery/corpo-quente-2.png', alt: 'Momento de dança e conexão' },
+            { src: '/images/gallery/corpo-quente-03.jpg', alt: 'Encontro online via Zoom' },
+          ].map((img, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-10% 0px' }}
+              transition={{ duration: 0.8 }}
+              className="w-full"
+            >
               <img
-                src="/images/gallery/corpo-quente-1.jpg"
-                alt="Corpo Quente Prática 1"
-                className="w-full h-full object-cover"
+                src={img.src}
+                alt={img.alt}
+                className="w-full h-auto rounded-sm shadow-sm transition-transform duration-700 hover:scale-[1.01]"
               />
-            </div>
-            <div className="aspect-square overflow-hidden bg-bg-secondary rounded-sm shadow-lg mt-8">
-              <img
-                src="/images/gallery/corpo-quente-2.png"
-                alt="Corpo Quente Prática 2"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </motion.aside>
+              {idx === 0 && (
+                 <p className="mt-6 font-display text-3xl text-ink-accent lowercase">
+                   Só corpo, presença e vontade de sentir.
+                 </p>
+              )}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </PageLayout>
   );
 }
+
 
 
