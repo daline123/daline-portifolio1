@@ -216,8 +216,6 @@ Fotos: Maurício Pokemon`
   },
 ];
 
-const ALL_WORKS_DATA: Work[] = [...ALL_WORKS_DATA_RAW];
-
 export default function Cena() {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
 
