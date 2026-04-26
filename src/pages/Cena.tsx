@@ -104,6 +104,7 @@ Identidade visual: Sérgio Donato`
   },
   {
     title: 'As Cotas',
+    period: '2022',
     description:
       `Diretora de movimento do videoclipe "As Cotas" da União Nacional dos Estudantes, um manifesto audiovisual que celebra os dez anos de implementação das Cotas no Brasil, que contou com grandes nomes da música brasileira como intérpretes como: Chico César, Leci Brandão, Mart'nália, Teresa Cristina, José Miguel Wisnik, Iara Rennó entre outros.`,
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
@@ -167,6 +168,7 @@ Motorista: Renato Tito`
   },
   {
     title: 'Serestinha',
+    period: '2025',
     description:
       `Ministra a oficina Serestinha, em que combina práticas de dança contemporânea, técnicas de composição e consciência corporal com as sonoridades das festas de serestas do Piauí. A oficina busca explorar como o repertório de movimento da nossa infância se expande e reflete na construção da nossa dança atual.`,
     cover: '/images/gallery/serestinha-capa.jpg',
@@ -187,6 +189,14 @@ Música: Sérgio Matos
 Fotos: Maurício Pokemon`
   },
   {
+    title: 'Ópera Serra Da Capivara (Ato Ancestral)',
+    period: '2017',
+    description:
+      `Intérprete no espetáculo "Ato Ancestral" da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.`,
+    cover: '/images/gallery/08.jpg',
+    images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
+  },
+  {
     title: 'Pretaforma',
     period: '2021',
     description:
@@ -197,6 +207,7 @@ Fotos: Maurício Pokemon`
   },
   {
     title: 'Mostra De Artes Cênicas',
+    period: '2019',
     description:
       `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`,
     cover: '/images/gallery/09.jpg',
@@ -204,6 +215,8 @@ Fotos: Maurício Pokemon`
     credits: `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`
   },
 ];
+
+const ALL_WORKS_DATA: Work[] = [...ALL_WORKS_DATA_RAW];
 
 export default function Cena() {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
@@ -250,7 +263,7 @@ function WorkCard({ work, index, onClick }: { work: Work; index: number; onClick
       onClick={onClick}
       className="group text-left"
     >
-      <div className="aspect-square overflow-hidden bg-bg-secondary mb-4 relative">
+      <div className="aspect-square overflow-hidden bg-bg-secondary mb-4 relative rounded-sm">
         <img
           src={work.cover}
           alt={work.title}
@@ -336,7 +349,7 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
             {/* Technical Credits Section */}
             {work.credits && (
               <div className="pt-12 border-t border-line-subtle">
-                <p className="label mb-6 text-ink-primary font-bold">Ficha Técnica</p>
+                <p className="label mb-6 text-ink-primary font-bold uppercase tracking-widest">Ficha Técnica</p>
                 
                 {Array.isArray(work.credits) ? (
                   <div className="space-y-4">
