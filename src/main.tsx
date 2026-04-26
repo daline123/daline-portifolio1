@@ -1,5 +1,5 @@
-// Build Trigger: 2026-04-25T13:40
-import { StrictMode } from 'react';
+// Build trigger: finalize-corpo-quente-v2
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
