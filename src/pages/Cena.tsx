@@ -218,7 +218,8 @@ Fotos: Maurício Pokemon`
     description:
       `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`,
     cover: '/images/gallery/09.jpg',
-    images: ['/images/gallery/09.jpg', '/images/gallery/08.jpg'],
+    images: ['/images/gallery/mostra-01.jpg', '/images/gallery/mostra-02.jpg'],
+    credits: `Fotografia: Maria Eduarda José (Foto 1) e Pedro Caldas (Foto 2)`
   },
 ];
 
