@@ -201,7 +201,8 @@ Fotos: Maurício Pokemon`
     description:
       `Intérprete no espetáculo "Ato Ancestral" da primeira edição da Ópera na Serra da Capivara em São Raimundo Nonato em (2017). Com direção e criação de Datan Izaká e colaboração de Samuel Alvis. A Ópera na Serra da Capivara hoje é destaque no calendário cultural brasileiro.`,
     cover: '/images/gallery/08.jpg',
-    images: ['/images/gallery/08.jpg', '/images/gallery/09.jpg'],
+    images: ['/images/gallery/opera-01.jpg', '/images/gallery/opera-02.jpg'],
+    credits: `Fotografia: Joaquim Neto (Foto 1) e Margareth Leite (Foto 2)`
   },
   {
     title: 'Pretaforma',
