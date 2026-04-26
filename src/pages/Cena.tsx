@@ -24,7 +24,7 @@ const ALL_WORKS_DATA: Work[] = [
     description:
       `Intérprete-criadora na Lia Rodrigues Companhia de Danças desde 2022, criou o espetáculo "Borda" em 2025 e dança também as peça "Encantado" e "Fúria". Através da companhia, já dançou em mais de 20 países e nos principais teatros do mundo como o Théâtre National Chaillot em Paris, Sandler's Wells em Londres e Sydney Opera House entre outros.`,
     cover: '/images/gallery/borda-capa.jpg',
-    images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
+    images: ['/images/gallery/02.jpg', '/images/gallery/03.jpg', '/images/gallery/lia-rodrigues-03.jpg', '/images/gallery/05.jpg', '/images/gallery/06.jpg'],
     credits: [
       {
         label: 'Borda - Ficha Técnica',
