@@ -83,10 +83,9 @@ export default function CorpoQuente() {
         <div className="space-y-12 md:space-y-20">
           {[
             { src: '/images/gallery/01.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
-            { src: '/images/gallery/corpo-quente-1.jpg', alt: 'Mulheres em roda na prática' },
+            { src: '/images/gallery/corpo-quente-04.jpg', alt: 'Encontro presencial Papo Delas' },
             { src: '/images/gallery/corpo-quente-2.png', alt: 'Momento de dança e conexão' },
             { src: '/images/gallery/corpo-quente-03.jpg', alt: 'Encontro online via Zoom' },
-            { src: '/images/gallery/corpo-quente-04.jpg', alt: 'Encontro presencial Papo Delas' },
           ].map((img, idx) => (
             <motion.div
               key={idx}
