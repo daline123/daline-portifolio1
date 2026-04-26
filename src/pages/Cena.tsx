@@ -85,7 +85,8 @@ Encantado é dedicado ao Oliver.`
     description:
       `Performer na instauração True Rouge (1997) do artista Tunga no Instituto Inhotim com direção da Lia Rodrigues em Cia de Danças, no evento "Anoitecer Inhotim" (2023). "True Rouge" foi a primeira obra a integrar Inhotim, e periodicamente é ativada por bailarinos.`,
     cover: '/images/gallery/07.jpg',
-    images: ['/images/gallery/07.jpg', '/images/gallery/06.jpg'],
+    images: ['/images/gallery/07.jpg', '/images/gallery/true-rouge-02.jpg', '/images/gallery/true-rouge-03.jpg', '/images/gallery/true-rouge-04.jpg', '/images/gallery/true-rouge-05.jpg', '/images/gallery/true-rouge-06.jpg'],
+    credits: `Fotografia: Leca Novo (Primeira foto) e Sammy Landweer (Fotos da instauração 2023 e bastidores)`
   },
   {
     title: 'Entre',
