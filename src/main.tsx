@@ -1,4 +1,4 @@
-// Build trigger: force-refresh-sunday
+// Build trigger: strict-rebuild-all-assets
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
