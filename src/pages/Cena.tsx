@@ -178,7 +178,11 @@ Fotografia de bastidores: Daline Ribeiro`
     images: [
       '/images/gallery/09.jpg',
       '/images/gallery/10.jpg',
+      '/images/gallery/serestinha-03.jpg',
+      '/images/gallery/serestinha-04.jpg',
+      '/images/gallery/serestinha-05.jpg',
     ],
+    credits: `Fotografia: Victor Martins (Práticas de aula)`
   },
   {
     title: 'Catirinas',
