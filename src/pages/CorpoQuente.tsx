@@ -19,7 +19,7 @@ const PILLARS = [
 export default function CorpoQuente() {
   return (
     <PageLayout label="Corpo Quente" wide>
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_600px] xl:grid-cols-[1fr_750px] gap-20 lg:gap-32 items-start max-w-[1600px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] xl:grid-cols-[1fr_500px] gap-16 lg:gap-24 items-start max-w-7xl mx-auto">
         {/* Left Side: Information */}
         <div className="lg:sticky lg:top-[calc(var(--nav-height)+60px)]">
           <motion.h1
@@ -80,12 +80,13 @@ export default function CorpoQuente() {
         </div>
 
         {/* Right Side: Stack of Natural Images */}
-        <div className="space-y-16 md:space-y-24">
+        <div className="space-y-12 md:space-y-20">
           {[
             { src: '/images/gallery/01.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
             { src: '/images/gallery/corpo-quente-1.jpg', alt: 'Mulheres em roda na prática' },
             { src: '/images/gallery/corpo-quente-2.png', alt: 'Momento de dança e conexão' },
             { src: '/images/gallery/corpo-quente-03.jpg', alt: 'Encontro online via Zoom' },
+            { src: '/images/gallery/corpo-quente-04.jpg', alt: 'Encontro presencial Papo Delas' },
           ].map((img, idx) => (
             <motion.div
               key={idx}
@@ -101,8 +102,8 @@ export default function CorpoQuente() {
                 className="w-full h-auto rounded-sm shadow-sm transition-transform duration-700 hover:scale-[1.01]"
               />
               {idx === 0 && (
-                 <p className="mt-6 font-display text-3xl text-ink-accent lowercase">
-                   Só corpo, presença e vontade de sentir.
+                 <p className="mt-6 font-display text-4xl text-ink-accent lowercase">
+                   Estar. Dançar. Sentir.
                  </p>
               )}
             </motion.div>
@@ -112,6 +113,7 @@ export default function CorpoQuente() {
     </PageLayout>
   );
 }
+
 
 
 
