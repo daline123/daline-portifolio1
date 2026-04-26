@@ -110,7 +110,7 @@ Identidade visual: Sérgio Donato`
       `Diretora de movimento do videoclipe "As Cotas" da União Nacional dos Estudantes, um manifesto audiovisual que celebra os dez anos de implementação das Cotas no Brasil, que contou com grandes nomes da música brasileira como intérpretes como: Chico César, Leci Brandão, Mart'nália, Teresa Cristina, José Miguel Wisnik, Iara Rennó entre outros.`,
     href: 'https://www.youtube.com/watch?v=OBjDDV8S2qg',
     cover: '/images/gallery/as-cotas.jpg',
-    images: ['/images/gallery/03.jpg', '/images/gallery/04.jpg'],
+    images: ['/images/gallery/as-cotas-01.jpg', '/images/gallery/as-cotas-02.jpg', '/images/gallery/as-cotas-03.jpg', '/images/gallery/as-cotas-04.jpg'],
     credits: `Realização: União Nacional dos Estudantes
 Direção: Fábio Bardella e Guilherme Martins
 Produção: RealqualqueR
@@ -165,7 +165,9 @@ Staff UNE Produção Executiva: Camila Ribeiro
 Comunicação: Manuella Mirella, Bel Vale, Junior Lima
 Assessoria de imprensa: Sara Puerta, Brenda Amaral
 Administrativo: Marta Vicente, Joaci Agostinho
-Motorista: Renato Tito`
+Motorista: Renato Tito
+
+Fotografia de bastidores: Daline Ribeiro`
   },
   {
     title: 'Serestinha',
