@@ -93,11 +93,11 @@ Encantado é dedicado ao Oliver.`
     description:
       `Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká. Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.`,
     cover: '/images/gallery/04.jpg',
-    images: ['/images/gallery/04.jpg', '/images/gallery/03.jpg'],
+    images: ['/images/gallery/04.jpg', '/images/gallery/entre-02.jpg'],
     credits: `Concepção e criação: Datan Izaká
 Performers: Helen Mesquita, Daline Ribeiro e Ireno Gomes
 Colaboração: Janaína Lobo, Jacob Alves, César Costa, Glenda Fontinele, Paulo Beltrão, Viviane Lopes, Layane Holanda e Eduardo Araújo
-Fotografia: Victor Gabriel
+Fotografia: Victor Gabriel e Festival Panorama RJ
 Design de Luz: Pablo Gomes
 Design de Som: Sérgio Donato
 Identidade visual: Sérgio Donato`
