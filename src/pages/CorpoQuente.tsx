@@ -102,7 +102,7 @@ export default function CorpoQuente() {
                 className="w-full h-auto rounded-sm shadow-sm transition-transform duration-700 hover:scale-[1.01]"
               />
               {idx === 0 && (
-                 <p className="mt-6 font-display text-4xl text-ink-accent lowercase">
+                 <p className="mt-6 font-display text-2xl text-ink-accent lowercase">
                    Estar. Dançar. Sentir.
                  </p>
               )}
