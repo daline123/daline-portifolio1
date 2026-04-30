@@ -12,22 +12,22 @@ export default function Home() {
       {/* Full Screen Image */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/images/gallery/home-capa.jpg"
+          src="/images/gallery/home-nova.png"
           alt="Daline Ribeiro — Dança e Movimento"
           className="w-full h-full object-cover"
         />
         
-        {/* Only Bottom Text Information */}
-        <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
+        {/* Top Left Text Information */}
+        <div className="absolute inset-0 flex flex-col justify-start p-8 md:p-16 pt-32 md:pt-40">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-white font-display font-medium text-6xl md:text-[min(10vw,110px)] lowercase leading-[0.8] mb-6">
+            <h1 className="text-ink-primary font-display font-medium text-6xl md:text-[min(10vw,110px)] lowercase leading-[0.8] mb-6">
               daline ribeiro
             </h1>
-            <p className="text-white/80 font-display font-normal text-sm md:text-xl tracking-[0.15em] lowercase">
+            <p className="text-ink-muted font-display font-normal text-sm md:text-xl tracking-[0.15em] lowercase">
               intérprete e criadora.
             </p>
           </motion.div>
