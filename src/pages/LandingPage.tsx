@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Home from './Home';
 import Cena from './Cena';
 import CorpoQuente from './CorpoQuente';

@@ -10,8 +10,6 @@ interface PageLayoutProps {
 }
 
 export default function PageLayout({ label, children, wide = false, isSection = false, id }: PageLayoutProps) {
-  const Component = isSection ? 'section' : 'main';
-  
   return (
     <motion.div
       id={id}
