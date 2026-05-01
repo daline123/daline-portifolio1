@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+// Build trigger: 2026-05-01 09:30
 
 export default function Home() {
   return (
