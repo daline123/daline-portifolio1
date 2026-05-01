@@ -89,7 +89,7 @@ Encantado é dedicado ao Oliver.`
     credits: `Fotografia: Leca Novo (Primeira foto) e Sammy Landweer (Fotos da instauração 2023 e bastidores)`
   },
   {
-    title: 'Entre',
+    title: 'E|N|T|R|E',
     period: '2016',
     description:
       `Intérprete-criadora do espetáculo de dança E|N|T|R|E (2016) de Datan Izaká. Além de uma temporada em Teresina, a peça teve apresentações no festival Modo de Existir- SESC Santo Amaro-SP e Festival Panorama-Rj. Foi o primeiro trabalho profissional como intérprete-criadora de Daline.`,
@@ -217,8 +217,8 @@ Fotos: Maurício Pokemon`
     period: '2019',
     description:
       `Coordenadora da Mostra de Artes Cênicas- 11ª Bienal da UNE Festival dos Estudantes. A Bienal é a maior vitrine das produções artísticas estudantis, participaram da 11ª edição 8 mil estudantes do Brasil inteiro. A mostra de Artes Cênicas contou com a curadoria de Maria Marighella e Adriana Bittencourt.`,
-    cover: '/images/gallery/mostra-01.jpg',
-    images: ['/images/gallery/mostra-01.jpg', '/images/gallery/mostra-02.jpg'],
+    cover: '/images/gallery/mostra-02.jpg',
+    images: ['/images/gallery/mostra-02.jpg', '/images/gallery/mostra-01.jpg'],
   },
 ];
 

@@ -83,6 +83,7 @@ export default function CorpoQuente() {
         <div className="space-y-12 md:space-y-20">
           {[
             { src: '/images/gallery/01.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
+            { src: '/images/gallery/corpo-quente.png', alt: 'Daline Ribeiro - Prática Corpo Quente' },
             { src: '/images/gallery/corpo-quente-2.png', alt: 'Daline Ribeiro - Prática Corpo Quente' },
             { src: '/images/gallery/corpo-quente-03.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
           ].map((img, idx) => (

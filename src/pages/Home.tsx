@@ -25,11 +25,11 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            <h1 className="text-ink-primary font-display font-normal text-4xl md:text-6xl lg:text-7xl lowercase leading-[0.8] mb-6">
+            <h1 className="text-ink-primary font-display font-bold text-4xl md:text-6xl lg:text-7xl lowercase leading-[0.8] mb-6">
               daline ribeiro
             </h1>
             <p className="text-ink-muted font-display font-normal text-sm md:text-xl tracking-[0.15em] lowercase">
-              intérprete e criadora.
+              dança. corpo. movimento
             </p>
           </motion.div>
         </div>
