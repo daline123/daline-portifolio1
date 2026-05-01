@@ -3,10 +3,10 @@ import { Link, NavLink, useLocation } from 'react-router-dom';
 import MobileMenu from './MobileMenu';
 
 const NAV_ITEMS = [
-  { to: '/sobre', label: 'Sobre' },
-  { to: '/cena', label: 'Cena' },
-  { to: '/corpo-quente', label: 'Corpo Quente' },
-  { to: '/contato', label: 'Fale Comigo' },
+  { to: '#sobre', label: 'Sobre' },
+  { to: '#cena', label: 'Cena' },
+  { to: '#corpo-quente', label: 'Corpo Quente' },
+  { to: '#contato', label: 'Fale Comigo' },
 ];
 
 export default function Navbar() {
@@ -22,6 +22,27 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.replace('#', '');
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80; // height of navbar
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+      setMobileOpen(false);
+    }
+  };
 
   return (
     <>
@@ -50,16 +71,14 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center gap-8 text-ink-primary">
             {NAV_ITEMS.map((item) => (
-              <NavLink key={item.to} to={item.to} end>
-                {({ isActive }) => (
-                  <span 
-                    className="nav-link" 
-                    data-active={isActive}
-                  >
-                    {item.label}
-                  </span>
-                )}
-              </NavLink>
+              <a 
+                key={item.to} 
+                href={item.to} 
+                onClick={(e) => handleNavClick(e, item.to)}
+                className="nav-link"
+              >
+                {item.label}
+              </a>
             ))}
             <a
               href="https://instagram.com/daline.ribeiro_"

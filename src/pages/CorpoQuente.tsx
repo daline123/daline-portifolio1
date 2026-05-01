@@ -17,9 +17,9 @@ const PILLARS = [
   'leitura',
 ];
 
-export default function CorpoQuente() {
+export default function CorpoQuente({ isSection, id }: { isSection?: boolean; id?: string }) {
   return (
-    <PageLayout label="Corpo Quente" wide>
+    <PageLayout label="Corpo Quente" wide isSection={isSection} id={id}>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] xl:grid-cols-[1fr_500px] gap-16 lg:gap-24 items-start max-w-7xl mx-auto">
         {/* Left Side: Information */}
         <div className="lg:sticky lg:top-[calc(var(--nav-height)+60px)]">

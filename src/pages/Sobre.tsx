@@ -8,9 +8,9 @@ const PARAGRAPHS = [
   'Além de intérprete, atua como criadora e produtora: criou festival de dança online, coordenou mostras de artes cênicas, assinou direção de movimento. Criou o Corpo Quente, práticas corporais dançantes para quem quer se reconectar com o próprio corpo através do movimento.',
 ];
 
-export default function Sobre() {
+export default function Sobre({ isSection, id }: { isSection?: boolean; id?: string }) {
   return (
-    <PageLayout label="Sobre" wide>
+    <PageLayout label="Sobre" wide isSection={isSection} id={id}>
       <div className="grid grid-cols-1 md:grid-cols-[360px_1fr] gap-12 md:gap-16 lg:gap-24 items-start">
         <motion.aside
           initial={{ opacity: 0, scale: 0.98 }}
@@ -24,7 +24,7 @@ export default function Sobre() {
               alt="Daline Ribeiro sorrindo"
               loading="lazy"
               decoding="async"
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </motion.aside>

@@ -223,11 +223,11 @@ Fotografia: Maurício Pokemon e Caio Bruno`
   },
 ];
 
-export default function Cena() {
+export default function Cena({ isSection, id }: { isSection?: boolean; id?: string }) {
   const [selectedWork, setSelectedWork] = useState<Work | null>(null);
 
   return (
-    <PageLayout label="Cena" wide>
+    <PageLayout label="Cena" wide isSection={isSection} id={id}>
       <motion.h1
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
 import ContactLink from '../components/ContactLink';
 
-export default function Contato() {
+export default function Contato({ isSection, id }: { isSection?: boolean; id?: string }) {
   return (
-    <PageLayout label="Fale Comigo">
+    <PageLayout label="Fale Comigo" isSection={isSection} id={id}>
       <motion.h1
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}

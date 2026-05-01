@@ -9,6 +9,8 @@ import CorpoQuente from './pages/CorpoQuente';
 import Contato from './pages/Contato';
 import NotFound from './pages/NotFound';
 
+import LandingPage from './pages/LandingPage';
+
 export default function App() {
   const location = useLocation();
 
@@ -18,11 +20,7 @@ export default function App() {
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<Sobre />} />
-          <Route path="/cena" element={<Cena />} />
-          <Route path="/corpo-quente" element={<CorpoQuente />} />
-          <Route path="/contato" element={<Contato />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>

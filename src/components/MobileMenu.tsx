@@ -64,13 +64,29 @@ export default function MobileMenu({ open, onClose, items }: MobileMenuProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.05, duration: 0.35 }}
               >
-                <Link
-                  to={item.to}
-                  onClick={onClose}
+                <a
+                  href={item.to}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onClose();
+                    const id = item.to.replace('#', '');
+                    const element = document.getElementById(id);
+                    if (element) {
+                      const offset = 80;
+                      const bodyRect = document.body.getBoundingClientRect().top;
+                      const elementRect = element.getBoundingClientRect().top;
+                      const elementPosition = elementRect - bodyRect;
+                      const offsetPosition = elementPosition - offset;
+                      window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }}
                   className="font-display text-[32px] text-ink-primary"
                 >
                   {item.label}
-                </Link>
+                </a>
               </motion.div>
             ))}
             <motion.a
