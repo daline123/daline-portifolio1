@@ -188,12 +188,12 @@ Fotografia de bastidores: Daline Ribeiro`
     title: 'Catirinas',
     period: '2017',
     description: `Performer do espetáculo "Catirinas" (2017) de Weyla Carvalho com apresentação no Junta - Festival Internacional de Dança de Teresina 3ª edição. O espetáculo ressignifica a história de Catirina que é personagem principal na trama do bumba-meu-boi.`,
-    cover: '/images/gallery/05.jpg',
-    images: ['/images/gallery/05.jpg', '/images/gallery/10.jpg'],
+    cover: '/images/gallery/catirina.jpg',
+    images: ['/images/gallery/catirina.jpg'],
     credits: `Concepção, Direção, Produção: Weyla Carvalho
-Intérpretes: Bailarinos do projeto redemoinho/ Escola Estadual de Dança Lenir Argento: Cipó Alvarenga, Marcelinho Lopes, Décio Costa, Marcos Abner, Aline Guimarães, Daline Ribeiro, Mariana Nívea, Tulipa Braga, Laisla Santos, Iara Teixeira, Caroline Rodrigues, Sammya Tamires e Larissa Almeida junto com convidados: Hélio Alvarenga, Armando Cavalcante e Iriane Oliveira
+Intérpretes: Cipó Alvarenga, Marcelinho Lopes, Décio Costa, Marcos Abner, Aline Guimarães, Daline Ribeiro, Mariana Nívea, Tulipa Braga, Laisla Santos, Iara Teixeira, Caroline Rodrigues, Sammya Tamires e Larissa Almeida junto com convidados: Hélio Alvarenga, Armando Cavalcante e Iriane Oliveira
 Música: Sérgio Matos
-Fotos: Maurício Pokemon`
+Fotografia: Maurício Pokemon e Caio Bruno`
   },
   {
     title: 'Ópera Serra Da Capivara (Ato Ancestral)',
