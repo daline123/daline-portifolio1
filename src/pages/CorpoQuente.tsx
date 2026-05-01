@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
+import ContinueNav from '../components/ContinueNav';
 
 const PARAGRAPHS = [
   'Corpo Quente é um projeto de práticas corporais dançantes criado por Daline Ribeiro para mulheres que querem se reconectar com o próprio corpo através do movimento.',
@@ -109,6 +110,8 @@ export default function CorpoQuente() {
           ))}
         </div>
       </div>
+      
+      <ContinueNav nextLabel="Sobre" nextHref="/sobre" />
     </PageLayout>
   );
 }
