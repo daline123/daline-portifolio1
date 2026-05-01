@@ -34,6 +34,6 @@ export default function PageLayout({ label, children, wide = false, isSection = 
         )}
         {children}
       </div>
-    </motion.main>
+    </motion.div>
   );
 }
