@@ -28,7 +28,7 @@ export default function CorpoQuente() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="font-display leading-[0.98] text-ink-primary mb-10 md:mb-14"
           >
-            <span className="block text-5xl md:text-7xl lg:text-[100px] font-medium lowercase">corpo (Atualizado)</span>
+            <span className="block text-5xl md:text-7xl lg:text-[100px] font-medium lowercase">corpo</span>
             <span className="block text-5xl md:text-7xl lg:text-[100px] font-normal text-ink-accent lowercase">
               quente.
             </span>
@@ -83,9 +83,8 @@ export default function CorpoQuente() {
         <div className="space-y-12 md:space-y-20">
           {[
             { src: '/images/gallery/01.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
-            { src: '/images/gallery/corpo-quente-04.png'},
-            { src: '/images/gallery/corpo-quente-03.jpg'},
-            { src: '/images/gallery/corpo-quente-2.png' },
+            { src: '/images/gallery/corpo-quente-2.png', alt: 'Daline Ribeiro - Prática Corpo Quente' },
+            { src: '/images/gallery/corpo-quente-03.jpg', alt: 'Daline Ribeiro - Prática Corpo Quente' },
           ].map((img, idx) => (
             <motion.div
               key={idx}
