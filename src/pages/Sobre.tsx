@@ -2,9 +2,10 @@ import { motion } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
 
 const PARAGRAPHS = [
-  'Daline Ribeiro é bailarina, criadora e artista da dança. Desde 2022 é intérprete-criadora na Lia Rodrigues Companhia de Danças, onde já se apresentou em mais de 20 países e dançou mais de 160 vezes o repertório da companhia, incluindo os espetáculos Borda, Encantado e Fúria.',
-  'Nascida em Teresina, começou no balé clássico aos 5 anos e nunca mais parou de estudar dança. É jornalista formada pela UFPI, tem formação livre em dança pela Escola Estadual de Dança Lenir Argento e integrou a 5ª Dentição da Universidade Antropofágica do Teatro Oficina.',
-  'Além de intérprete, atua como criadora e produtora: criou festival de dança online, coordenou mostras de artes cênicas, assinou direção de movimento. Criou o Corpo Quente, práticas corporais dançantes para quem quer se reconectar com o próprio corpo através do movimento.',
+  'Daline Ribeiro é bailarina, criadora e artista da dança. Nascida em Teresina, no Piauí, começou no balé clássico aos 5 anos e nunca mais parou de estudar dança.',
+  "Desde 2022 é intérprete-criadora na Lia Rodrigues Companhia de Danças, onde já se apresentou em mais de 20 países e dançou mais de 160 vezes o repertório da companhia, incluindo os espetáculos: Borda, Encantado e Fúria, em palcos como a Sydney Opera House, o Théâtre National de Chaillot e o Sadler's Wells Theatre.",
+  'É jornalista formada pela UFPI, tem formação livre em dança pela Escola Estadual de Dança Lenir Argento e integrou a 5ª Dentição da Universidade Antropofágica do Teatro Oficina. Fez suas primeiras experimentações em dança contemporânea e audiovisual no Projeto Redemoinho de Dança (PI).',
+  'Além de intérprete, atua como criadora e produtora: criou festival de dança online, coordenou mostras de artes cênicas e assinou direções de movimento. É criadora do Corpo Quente, práticas corporais dançantes para quem quer se reconectar com o próprio corpo através do movimento.',
 ];
 
 export default function Sobre({ isSection, id }: { isSection?: boolean; id?: string }) {
