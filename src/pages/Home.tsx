@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import ContinueNav from '../components/ContinueNav';
 
 export default function Home() {
   return (
@@ -36,10 +35,6 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </div>
-
-      <div className="max-w-7xl mx-auto px-8 md:px-16">
-        <ContinueNav nextLabel="Cena" nextHref="/cena" />
       </div>
     </motion.main>
   );

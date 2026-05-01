@@ -96,7 +96,7 @@ export default function MobileMenu({ open, onClose, items }: MobileMenuProps) {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.35 }}
-              className="uppercase text-[13px] tracking-label text-ink-muted mt-4"
+              className="uppercase text-[13px] tracking-label text-ink-primary mt-4"
             >
               Instagram
             </motion.a>

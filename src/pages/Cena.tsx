@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
-import ContinueNav from '../components/ContinueNav';
 
 interface TechnicalCredit {
   label: string;
@@ -248,8 +247,6 @@ export default function Cena({ isSection, id }: { isSection?: boolean; id?: stri
           />
         ))}
       </div>
-
-      <ContinueNav nextLabel="Corpo Quente" nextHref="/corpo-quente" />
 
       <AnimatePresence>
         {selectedWork && (

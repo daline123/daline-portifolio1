@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import PageLayout from '../components/PageLayout';
-import ContinueNav from '../components/ContinueNav';
 
 const PARAGRAPHS = [
   'Daline Ribeiro é bailarina, criadora e artista da dança. Desde 2022 é intérprete-criadora na Lia Rodrigues Companhia de Danças, onde já se apresentou em mais de 20 países e dançou mais de 160 vezes o repertório da companhia, incluindo os espetáculos Borda, Encantado e Fúria.',
@@ -20,7 +19,7 @@ export default function Sobre({ isSection, id }: { isSection?: boolean; id?: str
         >
           <div className="w-full aspect-[4/5] bg-bg-secondary overflow-hidden rounded-sm">
             <img
-              src="/images/sobre/capa.jpg"
+              src="/images/gallery/capa sobre.jpg"
               alt="Daline Ribeiro sorrindo"
               loading="lazy"
               decoding="async"
@@ -64,8 +63,6 @@ export default function Sobre({ isSection, id }: { isSection?: boolean; id?: str
           </motion.div>
         </div>
       </div>
-
-      <ContinueNav nextLabel="Contato" nextHref="/contato" />
     </PageLayout>
   );
 }

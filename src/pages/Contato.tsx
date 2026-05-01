@@ -41,7 +41,7 @@ export default function Contato({ isSection, id }: { isSection?: boolean; id?: s
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7, duration: 0.6 }}
-        className="font-display text-lg md:text-xl text-ink-muted leading-snug max-w-[52ch]"
+        className="font-display text-lg md:text-xl text-ink-primary leading-snug max-w-[52ch]"
       >
         Disponível para projetos, ativações, workshops e colaborações artísticas.
       </motion.p>

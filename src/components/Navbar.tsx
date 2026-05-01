@@ -64,7 +64,7 @@ export default function Navbar() {
             <span className="font-display font-medium text-[22px] md:text-[28px] lowercase text-ink-primary">
               daline ribeiro
             </span>
-            <span className="hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] mt-1 lowercase text-ink-muted">
+            <span className="hidden md:block font-sans font-normal text-[11px] tracking-[0.1em] mt-1 lowercase text-ink-primary">
               dança. corpo. movimento.
             </span>
           </Link>

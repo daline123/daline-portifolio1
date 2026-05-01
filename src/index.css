@@ -64,7 +64,7 @@ h4 {
   }
 
   .label {
-    @apply uppercase text-[13px] tracking-label text-ink-muted font-medium;
+    @apply uppercase text-[13px] tracking-label text-ink-primary font-medium;
   }
 }
 
