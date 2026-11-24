@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>roupitchas · Pix</title>
+<style>
+  :root {
+    --bg: #fff8f2;
+    --card: #ffffff;
+    --ink: #3a1f10;
+    --muted: #7a6254;
+    --brand: #d9480f;
+    --brand-dark: #b03a0a;
+    --line: #f3dccb;
+    --ok: #17794a;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px 16px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: ui-rounded, "Avenir Next", "Segoe UI", system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+  }
+  main {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: clamp(2.4rem, 11vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--brand);
+  }
+  .sub {
+    margin: 0 0 28px;
+    color: var(--muted);
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 28px 22px 24px;
+    box-shadow: 0 10px 30px rgba(217, 72, 15, 0.1);
+  }
+  .label {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .key {
+    margin: 6px 0 20px;
+    font-size: clamp(1.6rem, 8vw, 2rem);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+  button {
+    width: 100%;
+    padding: 16px 20px;
+    border: 0;
+    border-radius: 14px;
+    background: var(--brand);
+    color: #fff;
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  button:hover { background: var(--brand-dark); }
+  button:active { transform: scale(0.98); }
+  button:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 3px;
+  }
+  button.done { background: var(--ok); }
+  .status {
+    min-height: 1.5em;
+    margin: 12px 0 0;
+    font-size: 0.95rem;
+    color: var(--ok);
+    font-weight: 600;
+  }
+  dl {
+    margin: 20px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 12px;
+    text-align: left;
+  }
+  dl div { display: flex; justify-content: space-between; gap: 16px; }
+  dt { color: var(--muted); }
+  dd { margin: 0; font-weight: 600; text-align: right; }
+  .hint {
+    margin: 20px 0 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    button { transition: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>roupitchas</h1>
+  <p class="sub">Pague por Pix de forma rápida</p>
+
+  <section class="card" aria-labelledby="chave-label">
+    <p class="label" id="chave-label">Chave Pix (telefone)</p>
+    <p class="key" id="chave-exibida">(86) 98883-7636</p>
+
+    <button type="button" id="copiar">Copiar chave Pix</button>
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <dl>
+      <div><dt>Nome</dt><dd>Daline da Silva Ribeiro</dd></div>
+      <div><dt>Banco</dt><dd>Nubank</dd></div>
+    </dl>
+  </section>
+
+  <p class="hint">Depois de copiar, abra o app do seu banco, escolha Pix e cole a chave. Confira o nome antes de pagar.</p>
+</main>
+
+<script>
+  (function () {
+    var CHAVE = "86988837636";
+    var botao = document.getElementById("copiar");
+    var status = document.getElementById("status");
+    var timer;
+
+    function avisar(ok) {
+      clearTimeout(timer);
+      if (ok) {
+        botao.textContent = "Chave copiada!";
+        botao.classList.add("done");
+        status.textContent = "Agora é só colar no app do seu banco.";
+      } else {
+        status.style.color = "#b3261e";
+        status.textContent = "Não deu para copiar. Toque e segure o número para copiar manualmente.";
+      }
+      timer = setTimeout(function () {
+        botao.textContent = "Copiar chave Pix";
+        botao.classList.remove("done");
+        status.style.color = "";
+        status.textContent = "";
+      }, 3500);
+    }
+
+    function copiarAntigo() {
+      var campo = document.createElement("textarea");
+      campo.value = CHAVE;
+      campo.setAttribute("readonly", "");
+      campo.style.position = "fixed";
+      campo.style.opacity = "0";
+      document.body.appendChild(campo);
+      campo.select();
+      campo.setSelectionRange(0, CHAVE.length);
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(campo);
+      return ok;
+    }
+
+    botao.addEventListener("click", function () {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(CHAVE).then(
+          function () { avisar(true); },
+          function () { avisar(copiarAntigo()); }
+        );
+      } else {
+        avisar(copiarAntigo());
+      }
+    });
+  })();
+</script>
+</body>
+</html>
